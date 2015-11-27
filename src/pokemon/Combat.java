@@ -2,6 +2,8 @@ package pokemon;
 
 import java.util.ArrayList;
 
+import jdbc.AttaquesJDBC;
+import jdbc.TypeDePokemonsJDBC;
 import jdbc.TypesJDBC;
 
 public class Combat {
@@ -13,12 +15,17 @@ public class Combat {
         
         /* Testing */
         TypesJDBC typesJDBC = new TypesJDBC();
-        typesJDBC.getConnection();
+        typesJDBC.EstablishConnection();
         
+        AttaquesJDBC attaquesJDBC = new AttaquesJDBC();
+        ArrayList<Attaques> attaques = attaquesJDBC.Select();
         
-        Types type = typesJDBC.select(4);
+        TypeDePokemonsJDBC typeDePokemonsJDBC = new TypeDePokemonsJDBC();
+        ArrayList<TypeDePokemons> typeDePokemons = typeDePokemonsJDBC.Select();
         
-        ArrayList<Types> types = typesJDBC.select();
+        Types type = typesJDBC.Select(4);
+        
+        ArrayList<Types> types = typesJDBC.Select();
         for (Types types2 : types) {
 			System.out.println(types2.getNom());
 			System.out.println("  Fort contre :");
@@ -30,7 +37,7 @@ public class Combat {
 				System.out.println("    " + types3.getNom());	
 			}
 		}
-        typesJDBC.closeConnection();
+        typesJDBC.CloseConnection();
     }
 
 	private static void Introduction() {
@@ -55,6 +62,6 @@ public class Combat {
 		
 		attaques1.add(new Attaques("éclaire", 40, 90, typeElec));
 		
-		joueur1.add(new Pokemons("Pikachu",20,attaques1, new TypeDePokemons("Pikachu", 30, 50, 20, 30, 60, 40), pikachu));
+		//joueur1.add(new Pokemons("Pikachu",20,attaques1, new TypeDePokemons("Pikachu", 30, 50, 20, 30, 60, 40), pikachu));
 	}
 }

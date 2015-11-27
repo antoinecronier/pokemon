@@ -12,45 +12,23 @@ import java.util.List;
 import pokemon.Types;
 import dao.TypesDAO;
 
-public class TypesJDBC implements TypesDAO {
-
-	private Connection connection = null;
-
-	public Connection getConnection() {
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			if (connection == null)
-				connection = DriverManager
-						.getConnection("jdbc:mysql://localhost/pokemon?user=root&password=");
-
-		} catch (ClassNotFoundException e) {
-
-			e.printStackTrace();
-
-		} catch (SQLException e) {
-
-			e.printStackTrace();
-
-		}
-		return connection;
-	}
+public class TypesJDBC extends BaseJDBC implements TypesDAO {
 
 	@Override
-	public Types select(int id_type) {
+	public Types Select(Integer id_type) {
 		Types type = null;
 		try {
-			Statement statement = connection.createStatement();
+			Statement statement = super.EstablishConnection().createStatement();
 			ResultSet resultSet = statement
-					.executeQuery("SELECT * FROM pokemon.types "
-							+ "WHERE pokemon.types.id_types = " + id_type);
+					.executeQuery("SELECT * FROM pokemon.types WHERE pokemon.types.id_types = " + id_type);
 
 			while (resultSet.next()) {
 				type = new Types();
 				type.setId_types(Integer.parseInt(resultSet
 						.getString("id_types")));
 				type.setNom(resultSet.getString("nom"));
-				type.setFortContre(this.selectFort(type.getId_types()));
-				type.setFaibleContre(this.selectFaible(type.getId_types()));
+				type.setFortContre(this.SelectFort(type.getId_types()));
+				type.setFaibleContre(this.SelectFaible(type.getId_types()));
 			}
 			resultSet.close();
 			statement.close();
@@ -62,10 +40,10 @@ public class TypesJDBC implements TypesDAO {
 	}
 
 	@Override
-	public ArrayList<Types> select() {
+	public ArrayList<Types> Select() {
 		List<Types> types = new LinkedList<Types>();
         try {
-               Statement statement = connection.createStatement();
+               Statement statement = super.EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.types");
                 
                Types type = null;
@@ -73,8 +51,8 @@ public class TypesJDBC implements TypesDAO {
             	   type = new Types();
             	   type.setId_types(Integer.parseInt(resultSet.getString("id_types")));
             	   type.setNom(resultSet.getString("nom"));
-            	   type.setFortContre(this.selectFort(type.getId_types()));
-            	   type.setFaibleContre(this.selectFaible(type.getId_types()));
+            	   type.setFortContre(this.SelectFort(type.getId_types()));
+            	   type.setFaibleContre(this.SelectFaible(type.getId_types()));
             	   types.add(type);
                }
                resultSet.close();
@@ -87,10 +65,10 @@ public class TypesJDBC implements TypesDAO {
            return returnTypes;
 	}
 	
-	public ArrayList<Types> selectFort(int id) {
+	public ArrayList<Types> SelectFort(int id) {
 		List<Types> types = new LinkedList<Types>();
         try {
-               Statement statement = connection.createStatement();
+               Statement statement = super.EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.fortcontre "
                		+ "INNER JOIN pokemon.types ON pokemon.fortcontre.id_types_faible = pokemon.types.id_types "
                		+ "WHERE pokemon.fortcontre.id_types_base = " + id);
@@ -112,10 +90,10 @@ public class TypesJDBC implements TypesDAO {
            return returnTypes;
 	}
 	
-	public ArrayList<Types> selectFaible(int id) {
+	public ArrayList<Types> SelectFaible(int id) {
 		List<Types> types = new LinkedList<Types>();
         try {
-               Statement statement = connection.createStatement();
+               Statement statement = super.EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.faiblecontre "
                		+ "INNER JOIN pokemon.types ON pokemon.faiblecontre.id_types_fort = pokemon.types.id_types "
                		+ "WHERE pokemon.faiblecontre.id_types_base = " + id);
@@ -135,15 +113,5 @@ public class TypesJDBC implements TypesDAO {
            }
            ArrayList<Types> returnTypes = new ArrayList<Types>(types);
            return returnTypes;
-	}
-
-	public void closeConnection() {
-		try {
-			if (connection != null) {
-				connection.close();
-			}
-		} catch (Exception e) {
-			// do nothing
-		}
 	}
 }

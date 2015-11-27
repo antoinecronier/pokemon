@@ -1,5 +1,7 @@
 package pokemon;
 
+import java.util.ArrayList;
+
 public class TypeDePokemons {
 	private int id_type_pokemons;
 	private String nom;
@@ -9,9 +11,11 @@ public class TypeDePokemons {
 	private int defence_spe;
 	private int vitesse;
 	private int pv;
+	private ArrayList<Types> estDeType;
 	
 	public TypeDePokemons(String nom, int attaque, int attaque_spe,
-			int defence, int defence_spe, int vitesse, int pv) {
+			int defence, int defence_spe, int vitesse, int pv,
+			ArrayList<Types> estDeType) {
 		this.nom = nom;
 		this.attaque = attaque;
 		this.attaque_spe = attaque_spe;
@@ -19,6 +23,7 @@ public class TypeDePokemons {
 		this.defence_spe = defence_spe;
 		this.vitesse = vitesse;
 		this.pv = pv;
+		this.estDeType = estDeType;
 	}
 	
 	public TypeDePokemons() {
@@ -71,5 +76,11 @@ public class TypeDePokemons {
 	}
 	public void setPv(int pv) {
 		this.pv = pv;
+	}
+	public ArrayList<Types> getEstDeType() {
+		return estDeType;
+	}
+	public void setEstDeType(ArrayList<Types> estDeType) {
+		this.estDeType = estDeType;
 	}
 }

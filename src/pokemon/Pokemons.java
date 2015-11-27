@@ -1,23 +1,22 @@
 package pokemon;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Pokemons {
 	private int id_pokemons;
 	private String surnom;
 	private int niveau;
+	private Date capture;
 	private ArrayList<Attaques> attaques;
 	private TypeDePokemons typeDePokemon;
-	private ArrayList<Types> estDeTypes;
 
 	public Pokemons(String surnom, int niveau,
-			ArrayList<Attaques> attaques, TypeDePokemons typeDePokemon,
-			ArrayList<Types> estDeTypes) {
+			ArrayList<Attaques> attaques, TypeDePokemons typeDePokemon) {
 		this.surnom = surnom;
 		this.niveau = niveau;
 		this.attaques = attaques;
 		this.typeDePokemon = typeDePokemon;
-		this.estDeTypes = estDeTypes;
 	}
 	
 	public Pokemons() {
@@ -41,6 +40,14 @@ public class Pokemons {
 	public void setNiveau(int niveau) {
 		this.niveau = niveau;
 	}
+	public Date getCapture() {
+		return capture;
+	}
+
+	public void setCapture(Date capture) {
+		this.capture = capture;
+	}
+
 	public ArrayList<Attaques> getAttaques() {
 		return attaques;
 	}
@@ -52,11 +59,5 @@ public class Pokemons {
 	}
 	public void setTypeDePokemon(TypeDePokemons typeDePokemon) {
 		this.typeDePokemon = typeDePokemon;
-	}
-	public ArrayList<Types> getEstDeTypes() {
-		return estDeTypes;
-	}
-	public void setEstDeTypes(ArrayList<Types> estDeTypes) {
-		this.estDeTypes = estDeTypes;
 	}
 }
