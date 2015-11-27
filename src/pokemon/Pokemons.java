@@ -13,12 +13,14 @@ public class Pokemons {
 	public Pokemons(String surnom, int niveau,
 			ArrayList<Attaques> attaques, TypeDePokemons typeDePokemon,
 			ArrayList<Types> estDeTypes) {
-		super();
 		this.surnom = surnom;
 		this.niveau = niveau;
 		this.attaques = attaques;
 		this.typeDePokemon = typeDePokemon;
 		this.estDeTypes = estDeTypes;
+	}
+	
+	public Pokemons() {
 	}
 	
 	public int getId_pokemons() {

@@ -34,6 +34,7 @@ public class Zones {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+	
 
 	public ArrayList<Positions> getPositions() {
 		return positions;

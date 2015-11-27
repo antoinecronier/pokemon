@@ -9,11 +9,13 @@ public class Attaques {
 	
 	public Attaques(String nom, int puissance, int precision,
 			Types type) {
-		super();
 		this.nom = nom;
 		this.puissance = puissance;
 		this.precision = precision;
 		this.type = type;
+	}
+	
+	public Attaques() {
 	}
 	
 	public int getId_attaques() {

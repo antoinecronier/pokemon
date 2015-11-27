@@ -12,7 +12,6 @@ public class TypeDePokemons {
 	
 	public TypeDePokemons(String nom, int attaque, int attaque_spe,
 			int defence, int defence_spe, int vitesse, int pv) {
-		super();
 		this.nom = nom;
 		this.attaque = attaque;
 		this.attaque_spe = attaque_spe;
@@ -20,6 +19,9 @@ public class TypeDePokemons {
 		this.defence_spe = defence_spe;
 		this.vitesse = vitesse;
 		this.pv = pv;
+	}
+	
+	public TypeDePokemons() {
 	}
 	
 	public int getId_type_pokemons() {
