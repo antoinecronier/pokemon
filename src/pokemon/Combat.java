@@ -14,6 +14,10 @@ public class Combat {
         /* Testing */
         TypesJDBC typesJDBC = new TypesJDBC();
         typesJDBC.getConnection();
+        
+        
+        Types type = typesJDBC.select(4);
+        
         ArrayList<Types> types = typesJDBC.select();
         for (Types types2 : types) {
 			System.out.println(types2.getNom());

@@ -5,6 +5,14 @@ public class Positions {
 	private int x;
 	private int y;
 	
+	public Positions(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	public Positions() {
+	}
+	
 	public int getId_positions() {
 		return id_positions;
 	}
@@ -22,13 +30,5 @@ public class Positions {
 	}
 	public void setY(int y) {
 		this.y = y;
-	}
-	
-	public Positions(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
-	
-	public Positions() {
 	}
 }

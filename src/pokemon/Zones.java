@@ -8,9 +8,8 @@ public class Zones {
 	private ArrayList<Positions> positions;
 	private ArrayList<Dresseurs> dresseurs;
 	
-	public Zones(int id_zone, String nom, ArrayList<Positions> positions,
+	public Zones(String nom, ArrayList<Positions> positions,
 			ArrayList<Dresseurs> dresseurs) {
-		this.id_zone = id_zone;
 		this.nom = nom;
 		this.positions = positions;
 		this.dresseurs = dresseurs;

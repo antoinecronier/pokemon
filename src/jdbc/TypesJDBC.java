@@ -14,7 +14,7 @@ import dao.TypesDAO;
 
 public class TypesJDBC implements TypesDAO {
 
-	Connection connection = null;
+	private Connection connection = null;
 
 	public Connection getConnection() {
 		try {
@@ -33,6 +33,32 @@ public class TypesJDBC implements TypesDAO {
 
 		}
 		return connection;
+	}
+
+	@Override
+	public Types select(int id_type) {
+		Types type = null;
+		try {
+			Statement statement = connection.createStatement();
+			ResultSet resultSet = statement
+					.executeQuery("SELECT * FROM pokemon.types "
+							+ "WHERE pokemon.types.id_types = " + id_type);
+
+			while (resultSet.next()) {
+				type = new Types();
+				type.setId_types(Integer.parseInt(resultSet
+						.getString("id_types")));
+				type.setNom(resultSet.getString("nom"));
+				type.setFortContre(this.selectFort(type.getId_types()));
+				type.setFaibleContre(this.selectFaible(type.getId_types()));
+			}
+			resultSet.close();
+			statement.close();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return type;
 	}
 
 	@Override
