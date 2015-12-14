@@ -1,0 +1,45 @@
+﻿<UserControl
+    x:Class="UserControlTP1.UserControls.Connection"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UserControlTP1.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="200"
+    d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <!-- A brush for flat 3D panel borders -->
+        <LinearGradientBrush x:Key="Flat3DBorderBrush"
+                         StartPoint="0.499,0" EndPoint="0.501,1">
+            <GradientStop Color="#FFF" Offset="0" />
+            <GradientStop Color="#DDD" Offset="0.01" />
+            <GradientStop Color="#AAA" Offset="0.99" />
+            <GradientStop Color="#888" Offset="1" />
+        </LinearGradientBrush>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TxtBWelcome" Height="40" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center">Welcome, please login!</TextBlock>
+        <TextBlock x:Name="TxtBLoginT" Width="65" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Left">Login</TextBlock>
+        <TextBox x:Name="TxtBLogin" MaxWidth="125" Height="20" Grid.ColumnSpan="2" Margin="70,1,5,1" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Text="Login..." TextAlignment="Left" TextWrapping="Wrap" BorderThickness="0" GotFocus="TxtBLogin_GotFocus"/>
+        <TextBlock x:Name="TxtBPasswordT" Width="65" Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Left">Password</TextBlock>
+        <PasswordBox x:Name="TxtBPassword" Grid.ColumnSpan="2" Margin="70,0,0,0" MaxLength="12" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Password="Password" BorderThickness="0"></PasswordBox>
+        <Button x:Name="BtnConnect" Width="100" Grid.Column="0" Grid.Row="3" Tapped="BtnConnect_Tapped" VerticalAlignment="Top" HorizontalAlignment="Stretch" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="3" Height="34" Click="BtnConnect_Click">Connection</Button>
+        <Button x:Name="BtnExit" Width="100" Grid.Column="1" Grid.Row="3" Tapped="BtnExit_Tapped" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="3" Click="BtnExit_Click">Exit</Button>
+        <Button x:Name="BtnShowProfiles" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Tapped="BtnShowProfiles_Tapped" BorderBrush="{StaticResource Flat3DBorderBrush}" BorderThickness="3">Show Profiles</Button>
+    </Grid>
+</UserControl>
