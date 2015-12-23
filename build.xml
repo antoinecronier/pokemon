@@ -3,12 +3,12 @@
 
     
     <target name="pmd">
-     <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
+     <taskdef name="pmd" classpath="C:\Bitnami\jenkins-1.642-0\apps\jenkins\jenkins_home\plugins\pmd\WEB-INF\lib" classname="net.sourceforge.pmd.ant.PMDTask"/>
      <pmd shortFilenames="true">
       <ruleset>rulesets/favorites.xml</ruleset>
       <ruleset>basic</ruleset>
       <formatter type="html" toFile="pmd_report.html" linkPrefix="http://pmd.sourceforge.net/xref/"/>
-      <fileset dir="C:\Bitnami\jenkins-1.642-0\apps\jenkins\jenkins_home\plugins\pmd\WEB-INF\lib">
+      <fileset dir="C:\Users\tactfactory\workspaceLuna\Pokemon\src">
        <include name="**/*.java"/>
       </fileset>
      </pmd>
