@@ -59,7 +59,8 @@
                classpath="C:\Bitnami\jenkins-1.642-0\apps\jenkins\jenkins_home\plugins\checkstyle\WEB-INF\lib\checkstyle.jar" />
 
         <!-- run analysis-->
-        <checkstyle 
+        <checkstyle config="checkstyle_rules.xml"
+                   failureProperty="checkstyle.failure"
                    failOnViolation="false" >
             <formatter type="xml" tofile="${tmp.rel-dir}/checkstyle-result.xml" />
             <fileset dir="${source.dir}"
