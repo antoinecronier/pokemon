@@ -3,7 +3,6 @@
 
     
     <target name="pmd">
-     <taskdef name="pmd"/>
      <pmd shortFilenames="true">
       <ruleset>rulesets/favorites.xml</ruleset>
       <ruleset>basic</ruleset>
