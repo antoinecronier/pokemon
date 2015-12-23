@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="harmony-rules">
+<project name="pokemon">
     <property file="${env.KEYSTORE_PATH}/${ant.project.name}.properties" />
 
     <property name="findbug.analyze.package" value="" />
