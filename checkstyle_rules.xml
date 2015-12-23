@@ -61,11 +61,11 @@
     <!--   <property name="headerFile" value="${checkstyle.header.file}"/> -->
     <!--   <property name="fileExtensions" value="java"/> -->
     <!-- </module> -->
-    <!-- <module name="RegexpHeader">
+    <module name="RegexpHeader">
         <property
             name="headerFile"
             value="java.header"/>
-    </module> -->
+    </module>
 
     <module name="TreeWalker">
 
@@ -172,6 +172,9 @@
 
         <module name="RequireThisCheck" />
 
+    </module>
+    <module name="SuppressionFilter">
+        <property name="file" value="checkstyle_exclude.xml" />
     </module>
 
 </module>

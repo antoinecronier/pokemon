@@ -1,131 +1,54 @@
-<?xml version="1.0" ?> 
-<project name="AntExample1" default="war">
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="open" default="help">
 
-    <property name="findbug.analyze.package" value="" />
-    <property name="checkstyle.includes" value="" />
+    <!-- The local.properties file is created and updated by the 'android' tool.
+         It contains the path to the SDK. It should *NOT* be checked into
+         Version Control Systems. -->
+    <property file="local.properties" />
 
-    <path id="compile.classpath">
-        <fileset dir="WebContent/WEB-INF/lib">
-            <include name="*.jar"/>
-        </fileset>
-    </path>
-    
-    <target name="init">
-        <mkdir dir="build/classes"/>
-        <mkdir dir="dist" />
-    </target>
-    
-    <target name="compile" depends="init" >
-        <javac destdir="build/classes" debug="true" srcdir="src">
-            <classpath refid="compile.classpath"/>
-        </javac>
-    </target>
-    
-    <target name="war" depends="compile">
-        <war destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
-            <fileset dir="WebContent"/>
-            <lib dir="WebContent/WEB-INF/lib"/>
-            <classes dir="build/classes"/>
-        </war>
-    </target>
-    
-    <target name="clean">
-        <delete dir="dist" />
-        <delete dir="build" />
-    </target>
+    <!-- The ant.properties file can be created by you. It is only edited by the
+         'android' tool to add properties to it.
+         This is the place to change some Ant specific build properties.
+         Here are some properties you may want to change/update:
 
-    <target name="test-all" depends="clean,reports"/>
+         source.dir
+             The name of the source directory. Default is 'src'.
+         out.dir
+             The name of the output directory. Default is 'bin'.
 
-    <target name="run-findbugs" depends="init">
-        <taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" description="classes+findbugs=magic" classpathref="findbugs.dir.jars"/>
-        <findbugs home="${env.FINDBUGS_HOME}"
-                output="xml"
-                outputFile="${tmp.rel-dir}/findbugs.xml"
-                onlyAnalyze="${findbug.analyze.package}"
-                excludefilter="./findbugs_excludes.xml">
-            <sourcePath path="${source.dir}" />
-            <class location="${out.dir}" />
-            <auxClasspath refid="classpath" /> <!-- so we dont get hundrets of "The following classes needed for analysis were missing" warnings. -->
-        </findbugs>
-        <xslt
-            in="${tmp.rel-dir}/findbugs.xml"
-                   out="${tmp.rel-dir}/findbugs.html"
-            style="${env.FINDBUGS_HOME}/src/xsl/fancy.xsl"
-           />
-    </target>
 
-    <target name="run-checkstyle" depends="init"
-        description="Report of code convention violations.">
+         For other overridable properties, look at the beginning of the rules
+         files in the SDK, at tools/ant/build.xml
 
-        <!-- Run this target if CheckStyle is installed. -->
-        <taskdef resource="checkstyletask.properties"
-               classpath="/plugins/checkstyle/WEB-INF/lib/checkstyle.jar" />
+         Properties related to the SDK location or the project target should
+         be updated using the 'android' tool with the 'update' action.
 
-        <!-- run analysis-->
-        <checkstyle config="checkstyle_rules.xml"
-                   failureProperty="checkstyle.failure"
-                   failOnViolation="false" >
-            <formatter type="xml" tofile="./checkstyle-result.xml" />
-            <fileset dir="${source.dir}"
-                includes="${checkstyle.includes}" />
-        </checkstyle>
-    </target>
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems.
 
-    <target name="run-pmd" depends="init"
-        description="Run pmd">
+         -->
+    <property file="ant.properties" />
 
-        <!-- Fail this target if Pmd is not installed. -->
-        <available file="${env.PMD_HOME}/lib/pmd-5.0.2.jar"
-            property="pmd.available" />
-        <fail unless="pmd.available"
-            message="Error: PMD_HOME not set or pmd-5.0.2.jar not found." />
+    <property environment="env" />
 
-        <path id="pmd.classpath">
-            <fileset dir="${env.PMD_HOME}/lib/">
-                <include name="**/*.jar" />
-            </fileset>
-        </path>
+    <!-- quick check on sdk.dir -->
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable."
+            unless="sdk.dir"
+    />
 
-        <!-- Run this target if Pmd is installed. -->
-        <taskdef name="pmd"
-            classpathref="pmd.classpath"
-            classpath="${env.PMD_HOME}/lib/pmd-5.0.2.jar"
-            classname="net.sourceforge.pmd.ant.PMDTask" />
-        <pmd shortFilenames="true">
-            <ruleset>./pmd_rules.xml</ruleset>
-            <formatter type="xml" toFile="${tmp.rel-dir}/pmd.xml"/>
-            <fileset dir="${source.dir}">
-                <include name="**/*.java"/>
-                <exclude name="**/*Test*"/>
-            </fileset>
-        </pmd>
+    <!--
+        Import per project custom build rules if present at the root of the project.
+        This is the place to put custom intermediary targets such as:
+            -pre-build
+            -pre-compile
+            -post-compile (This is typically used for code obfuscation.
+                           Compiled code location: ${out.classes.absolute.dir}
+                           If this is not done in place, override ${out.dex.input.absolute.dir})
+            -post-package
+            -post-build
+            -pre-clean
+    -->
+    <import file="custom_rules.xml" optional="true" />
 
-        <taskdef name="cpd"
-            classpathref="pmd.classpath"
-            classpath="${env.PMD_HOME}/lib/pmd-5.0.2.jar"
-            classname="net.sourceforge.pmd.cpd.CPDTask" />
-        <cpd
-            minimumTokenCount="100"
-            language="java"
-            format="xml"
-            outputFile="${tmp.rel-dir}/cpd.xml">
-            <fileset dir="${source.dir}">
-                <include name="**/*.java"/>
-                <exclude name="**/*Test*"/>
-            </fileset>
-        </cpd>
-
-        <!-- Report -->
-        <xslt
-            in="${tmp.rel-dir}/pmd.xml"
-            out="${tmp.rel-dir}/pmd.html"
-            style="${env.PMD_HOME}/etc/xslt/pmd-report.xslt" />
-        <xslt
-            in="${tmp.rel-dir}/cpd.xml"
-            out="${tmp.rel-dir}/cpd.html"
-            style="${env.PMD_HOME}/etc/xslt/cpdhtml.xslt" />
-    </target>
-
-    <target name="reports" depends="run-checkstyle,run-findbugs,run-pmd" />
-    
 </project>
