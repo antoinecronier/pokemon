@@ -44,7 +44,6 @@
     </target>
 
     <target name="checkstyle">
-     <taskdef name="checkstyle">
      <checkstyle config="docs/sun_checks.xml">
       <fileset dir="src/checkstyle" includes="**/*.java"/>
       <formatter type="plain"/>
