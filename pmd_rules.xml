@@ -38,5 +38,11 @@
         <exclude name="AvoidFinalLocalVariable"/>
    </rule>
 
-   <!-- <exclude-pattern>???.*</exclude-pattern> -->
+    <exclude-pattern>com.tactfactory.transatopen.criterias.base.*</exclude-pattern>
+    <exclude-pattern>com.tactfactory.transatopen.data.base.*</exclude-pattern>
+    <exclude-pattern>com.tactfactory.transatopen.harmony.*</exclude-pattern>
+    <exclude-pattern>com.tactfactory.transatopen.provider.base.*</exclude-pattern>
+    <exclude-pattern>com.tactfactory.transatopen.provider.utils.base.*</exclude-pattern>
+    <exclude-pattern>com.tactfactory.transatopen.TransatopenApplicationBase.java</exclude-pattern>
+    <exclude-pattern>com.google.*</exclude-pattern>
 </ruleset>
