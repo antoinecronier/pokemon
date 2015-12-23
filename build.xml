@@ -56,7 +56,7 @@
 
         <!-- Run this target if CheckStyle is installed. -->
         <taskdef resource="checkstyletask.properties"
-               classpath="C:\Bitnami\jenkins-1.642-0\apps\jenkins\jenkins_home\plugins\checkstyle\WEB-INF\lib\checkstyle.jar" />
+               classpath="/plugins/checkstyle/WEB-INF/lib/checkstyle.jar" />
 
         <!-- run analysis-->
         <checkstyle config="checkstyle_rules.xml"
