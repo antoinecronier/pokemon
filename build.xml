@@ -3,7 +3,7 @@
 
     
     <target name="pmd">
-     <taskdef name="pmd" classpath="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/plugins/pmd/WEB-INF/lib/pmd-java-5.2.3.jar" classname="net.sourceforge.pmd.ant.PMDTask"/>
+     <taskdef name="pmd" classpath="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/plugins/pmd/WEB-INF/lib/pmd-core-5.2.3.jar" classname="net.sourceforge.pmd.ant.PMDTask"/>
      <pmd shortFilenames="true">
       <ruleset>rulesets/favorites.xml</ruleset>
       <ruleset>basic</ruleset>
