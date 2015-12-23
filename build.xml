@@ -1,0 +1,66 @@
+<?xml version="1.0" ?> 
+<project name="AntExample1" default="war">
+
+    <path id="compile.classpath">
+        <fileset dir="WebContent/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <mkdir dir="dist" />
+    </target>
+    
+    <target name="compile" depends="init" >
+        <javac destdir="build/classes" debug="true" srcdir="src">
+            <classpath refid="compile.classpath"/>
+        </javac>
+    </target>
+    
+    <target name="war" depends="compile">
+        <war destfile="dist/AntExample.war" webxml="WebContent/WEB-INF/web.xml">
+            <fileset dir="WebContent"/>
+            <lib dir="WebContent/WEB-INF/lib"/>
+            <classes dir="build/classes"/>
+        </war>
+    </target>
+    
+    <target name="clean">
+        <delete dir="dist" />
+        <delete dir="build" />
+    </target>
+
+    <target name="pmd">
+     <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
+     <pmd shortFilenames="true">
+      <ruleset>rulesets/java/design.xml</ruleset>
+      <ruleset>java-basic</ruleset>
+      <formatter type="html" toFile="pmd_report.html" linkPrefix="http://pmd.sourceforge.net/xref/"/>
+      <fileset dir="/usr/local/j2sdk1.4.1_01/src/">
+       <include name="java/lang/*.java"/>
+      </fileset>
+     </pmd>
+    </target>
+
+    <target name="checkstyle">
+     <taskdef name="checkstyle">
+     <checkstyle config="docs/sun_checks.xml">
+      <fileset dir="src/checkstyle" includes="**/*.java"/>
+      <formatter type="plain"/>
+      <formatter type="xml" toFile="build/checkstyle_errors.xml"/>
+     </checkstyle>
+    </target>
+
+    <property name="findbugs.home" value="/export/home/daveho/work/findbugs" />
+    <target name="findbugs" depends="jar">
+    <findbugs home="${findbugs.home}"
+              output="xml"
+              outputFile="bcel-fb.xml" >
+      <auxClasspath path="${basedir}/lib/Regex.jar" />
+      <sourcePath path="${basedir}/src/java" />
+      <class location="${basedir}/bin/bcel.jar" />
+    </findbugs>
+  </target>
+    
+</project>
