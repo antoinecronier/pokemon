@@ -7,8 +7,8 @@
      <pmd shortFilenames="true">
       <ruleset>rulesets/favorites.xml</ruleset>
       <ruleset>basic</ruleset>
-      <formatter type="html" toFile="pmd_report.html" linkPrefix="http://pmd.sourceforge.net/xref/"/>
-      <fileset dir="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/workspace/Master-Base-Test\src">
+      <formatter type="html" toFile="pmd_report.html"/>
+      <fileset dir="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/workspace/Master-Base-Test/src">
        <include name="**/*.java"/>
       </fileset>
      </pmd>
