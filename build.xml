@@ -66,13 +66,6 @@
             <fileset dir="${source.dir}"
                 includes="${checkstyle.includes}" />
         </checkstyle>
-
-        <!-- Report -->
-        <xslt
-            in="${tmp.rel-dir}/checkstyle-result.xml"
-            out="${tmp.rel-dir}/checkstyle-result.html"
-            style="${env.CHECKSTYLE_HOME}/contrib/checkstyle-noframes.xsl"
-        />
     </target>
 
     <target name="run-pmd" depends="init"
