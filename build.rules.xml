@@ -7,7 +7,7 @@
     <property name="checkstyle.excludes" value="" />
     <property name="tmp.rel-dir" value="tmp" />
     <property name="coverage.dir" value="${basedir}/coverage" />
-    <property name="emma.dir" value="/usr/bin/emma" />
+    <property name="emma.dir" value="C:\Bitnami\jenkins-1.642-0\apps\jenkins\jenkins_home\plugins\emma\WEB-INF\lib" />
     <property name="src.dir" value="${basedir}/src/"/>
     <property name="class.dir" value="${basedir}/class/"/>
     <property name="instrumented.dir" value="${basedir}/inst/"/>
