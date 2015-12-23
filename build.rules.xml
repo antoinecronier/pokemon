@@ -47,7 +47,7 @@
         <mkdir dir="${tmp.rel-dir}"/>
     </target>
 
-    <target name="test-all" depends="emma,clean,reports"/>
+    <target name="test-all" depends="emma,reports"/>
 
     <target name="run-findbugs" depends="init">
         <taskdef name="findbugs" classname="edu.umd.cs.findbugs.anttask.FindBugsTask" description="classes+findbugs=magic" classpathref="findbugs.dir.jars"/>
