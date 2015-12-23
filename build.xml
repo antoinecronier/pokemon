@@ -54,19 +54,12 @@
     <target name="run-checkstyle" depends="init"
         description="Report of code convention violations.">
 
-        <!-- Fail this target if CheckStyle is not installed. -->
-           <available file="${env.CHECKSTYLE_HOME}/checkstyle-5.6-all.jar"
-            property="checkstyle.available"/>
-           <fail unless="checkstyle.available"
-               message="Error: CHECKSTYLE_HOME not set or checkstyle-5.6-all.jar not found." />
-
         <!-- Run this target if CheckStyle is installed. -->
         <taskdef resource="checkstyletask.properties"
-               classpath="${env.CHECKSTYLE_HOME}/checkstyle-5.6-all.jar" />
+               classpath="C:\Bitnami\jenkins-1.642-0\apps\jenkins\jenkins_home\plugins\checkstyle\WEB-INF\lib\checkstyle.jar" />
 
         <!-- run analysis-->
-        <checkstyle config="checkstyle_rules.xml"
-                   failureProperty="checkstyle.failure"
+        <checkstyle 
                    failOnViolation="false" >
             <formatter type="xml" tofile="${tmp.rel-dir}/checkstyle-result.xml" />
             <fileset dir="${source.dir}"
