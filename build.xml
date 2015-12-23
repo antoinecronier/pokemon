@@ -6,8 +6,6 @@
             <include name="*.jar"/>
         </fileset>
     </path>
-
-    <target name="test-all" depends="emma,clean,pmd,checkstyle,findbugs"/>
     
     <target name="init">
         <mkdir dir="build/classes"/>
