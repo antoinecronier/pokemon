@@ -1,6 +1,9 @@
 <?xml version="1.0" ?> 
 <project name="AntExample1" default="war">
 
+    <property name="findbug.analyze.package" value="" />
+    <property name="checkstyle.includes" value="" />
+
     <path id="compile.classpath">
         <fileset dir="WebContent/WEB-INF/lib">
             <include name="*.jar"/>
