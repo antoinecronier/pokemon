@@ -3,7 +3,7 @@
 
     
     <target name="pmd">
-     <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
+     <taskdef name="pmd"/>
      <pmd shortFilenames="true">
       <ruleset>rulesets/favorites.xml</ruleset>
       <ruleset>basic</ruleset>
