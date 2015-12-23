@@ -62,10 +62,9 @@
         <checkstyle config="checkstyle_rules.xml"
                    failureProperty="checkstyle.failure"
                    failOnViolation="false" >
-            <formatter type="xml" tofile="${tmp.rel-dir}/checkstyle-result.xml" />
+            <formatter type="xml" tofile="./checkstyle-result.xml" />
             <fileset dir="${source.dir}"
-                includes="${checkstyle.includes}"
-                excludes="${checkstyle.excludes}" />
+                includes="${checkstyle.includes}" />
         </checkstyle>
 
         <!-- Report -->
