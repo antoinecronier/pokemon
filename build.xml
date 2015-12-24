@@ -237,10 +237,6 @@
             <formatter type="xml" tofile="${report.checkstyle.dir}/checkstyle_report.xml" />
             <fileset dir="${src.dir}" includes="**/*.java" />
         </checkstyle>
-
-        <style in="${report.checkstyle.dir}/checkstyle_report.xml"
-               out="${report.checkstyle.dir}/checkstyle_report.html""
-        />
     </target>
 
     <!-- -->
