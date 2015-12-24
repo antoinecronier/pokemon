@@ -118,13 +118,12 @@
     >
         <mkdir dir="${report.temp.dir}" />
 
-        <junit printsummary="yes" fork="yes" haltonfailure="no">
+        <junit printsummary="yes" fork="yes" haltonfailure="no" classpath="${junit.home.dir}/junit-4.10.jar}">
 
             <!-- Note the classpath order: instrumented classes are before 
                  the original (uninstrumented) classes.  This is important. -->
             <classpath location="${instrumented.dir}" />
             <classpath location="${bin.dir}" />
-            <classpath location="${junit.home.dir}/junit-4.10.jar}" />
 
             <formatter type="plain" />
             <formatter type="xml" />
