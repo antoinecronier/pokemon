@@ -239,8 +239,7 @@
         </checkstyle>
 
         <style in="${report.checkstyle.dir}/checkstyle_report.xml"
-               out="${report.checkstyle.dir}/checkstyle_report.html"
-               style="${checkstyle.home.dir}/contrib/checkstyle-noframes.xsl"
+               out="${report.checkstyle.dir}/checkstyle_report.html""
         />
     </target>
 
