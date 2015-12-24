@@ -237,8 +237,8 @@
             <fileset dir="${src.dir}" includes="**/*.java" />
         </checkstyle>
 
-        <xlst in="${report.checkstyle.dir}/checkstyle_report.xml"
-              out="${report.checkstyle.dir}/checkstyle_report.html"
+        <style in="${report.checkstyle.dir}/checkstyle_report.xml"
+               out="${report.checkstyle.dir}/checkstyle_report.html"
         />
     </target>
 
