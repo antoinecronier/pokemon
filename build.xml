@@ -109,6 +109,7 @@
         </pmd>
         <xslt in="${report.pmd.dir}/pmd_report.xml"
               out="${report.pmd.dir}/pmd_report.html"
+              style="${pmd.home.dir}/stylesheet.xsl"
         />
     </target>
 
@@ -237,8 +238,9 @@
             <fileset dir="${src.dir}" includes="**/*.java" />
         </checkstyle>
 
-        <style in="${report.checkstyle.dir}/checkstyle_report.xml"
-               out="${report.checkstyle.dir}/checkstyle_report.html"
+        <xslt in="${report.checkstyle.dir}/checkstyle_report.xml"
+              out="${report.checkstyle.dir}/checkstyle_report.html"
+              style="${checkstyle.home.dir}/checkstyle-noframes-sorted.xsl"
         />
     </target>
 
