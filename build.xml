@@ -116,8 +116,7 @@
     <!-- -->
     <target name="compile" depends="clean" description="Compile the entire project.">
         <mkdir dir="${bin.dir}" />
-        <javac debug="true"
-               debuglevel="lines, source"
+        <javac debug="false"
                srcdir="${src.dir}"
                destdir="${bin.dir}"
                classpathref="run.classpath"
