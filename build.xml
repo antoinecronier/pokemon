@@ -217,15 +217,15 @@
     <target name="report.checkstyle" 
         description="Generate a report of code convention violations.">
         <taskdef resource="checkstyletask.properties"
-                 classpath="${checkstyle.home.dir}\checkstyle-6.13-all.jar"
+                 classpath="${checkstyle.home.dir}\checkstyle-5.9-all.jar"
         />
 
         <!-- run verification of installation-->
-        <available file="${checkstyle.home.dir}\checkstyle-6.13-all.jar"
+        <available file="${checkstyle.home.dir}\checkstyle-5.9-all.jar"
                    property="checkstyle.available"
         />
         <fail unless="checkstyle.available"
-              message="Error: CHECKSTYLE_HOME not set or checkstyle-6.13-all.jar not found."
+              message="Error: CHECKSTYLE_HOME not set or checkstyle-5.9-all.jar not found."
         />
         <mkdir dir="${report.checkstyle.dir}" />
 
