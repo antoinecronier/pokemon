@@ -216,7 +216,8 @@
     <!-- -->
     <target name="report.checkstyle" 
         description="Generate a report of code convention violations.">
-        <taskdef classpath="${checkstyle.home.dir}/checkstyle-6.13-all.jar"
+        <taskdef resource="checkstyletask.properties"
+                 classpath="${checkstyle.home.dir}/checkstyle-6.13-all.jar"
         />
 
         <!-- run verification of installation-->
