@@ -7,8 +7,8 @@
      <pmd shortFilenames="true">
       <ruleset>./pmd_rules.xml</ruleset>
       <formatter type="html" toFile="pmd_report.html"/>
-      <fileset dir="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/workspace/Master-Base-Test/src/">
-       <include name="**/*.java"/>
+      <fileset dir="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/workspace/Master-Base-Test/src/pokemon">
+       <include name="*.java"/>
       </fileset>
      </pmd>
     </target>
