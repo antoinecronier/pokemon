@@ -108,7 +108,6 @@
             </fileset>
         </pmd>
         <xslt in="${report.pmd.dir}/pmd_report.xml"
-              style="${pmd.home.dir}/etc/xslt/pmd-report-per-class.xslt"
               out="${report.pmd.dir}/pmd_report.html"
         />
     </target>
@@ -237,6 +236,10 @@
             <formatter type="xml" tofile="${report.checkstyle.dir}/checkstyle_report.xml" />
             <fileset dir="${src.dir}" includes="**/*.java" />
         </checkstyle>
+
+        <xlst in="${report.checkstyle.dir}/checkstyle_report.xml"
+              out="${report.checkstyle.dir}/checkstyle_report.html"
+        />
     </target>
 
     <!-- -->
