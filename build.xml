@@ -12,6 +12,7 @@
     <property name="checkstyle.home.dir" location="C:/ContinuousIntegration/checkstyle-6.13" />
     <property name="findbugs.home.dir" value="C:/ContinuousIntegration/findbugs-3.0.1" />
     <property name="pmd.home.dir" value="C:/ContinuousIntegration/pmd-bin-5.4.1" />
+    <property name="junit.home.dir" value="C:/ContinuousIntegration/junit" />
     <property name="lib.dir" location="${basedir}/lib" />
     <property name="src.dir" location="${basedir}/src" />
     <property name="bin.dir" location="${basedir}/bin" />
@@ -28,7 +29,7 @@
 
     <path id="run.classpath">
         <pathelement path="${bin.dir}" />
-        <pathelement path="${basedir}/lib/junit-4.5.jar" />
+        <pathelement path="${basedir}/lib/junit-4.10.jar.jar" />
     </path>
 
     <!-- -->
@@ -72,7 +73,7 @@
         >
             <class location="${bin.dir}" />
             <auxClasspath>
-                <fileset file="${basedir}/lib/junit-4.5.jar" />
+                <fileset file="${basedir}/lib/junit-4.10.jar.jar" />
             </auxClasspath>
         </findbugs>
     </target>
@@ -123,7 +124,7 @@
                  the original (uninstrumented) classes.  This is important. -->
             <classpath location="${instrumented.dir}" />
             <classpath location="${bin.dir}" />
-            <classpath location="${basedir}/lib/junit-4.5.jar}" />
+            <classpath location="${junit.home.dir}/junit-4.10.jar}" />
 
             <formatter type="plain" />
             <formatter type="xml" />
