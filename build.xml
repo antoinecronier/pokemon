@@ -230,7 +230,7 @@
         <mkdir dir="${report.checkstyle.dir}" />
 
         <!-- run analysis-->
-        <checkstyle config="${checkstyle.home.dir}/checkstyle_rules.xml"
+        <checkstyle config="${basedir}/checkstyle_rules.xml"
                     failureProperty="checkstyle.failure"
                     failOnViolation="false"
         >
