@@ -101,6 +101,25 @@
         />
     </target>
 
+    <taskdef  name="cpd"
+              classpathref="pmd2.classpath"
+              classname="net.sourceforge.pmd.cpd.CPDTask" />
+    <target name="report.cpd">
+        <cpd
+            minimumTokenCount="100"
+            language="java"
+            format="xml"
+            outputFile="${report.pmd.dir}/cpd_report.xml">
+            <fileset dir="${src.dir}">
+                <include name="**/*.java"/>
+            </fileset>
+        </cpd>
+        <xslt in="${report.pmd.dir}/cpd_report.xml"
+              out="${report.pmd.dir}/cpd_report.html"
+              style="${pmd.home.dir}/stylesheet.xsl"
+        />
+    </target>
+
     <!-- -->
     <target name="compile" depends="clean" description="Compile the entire project.">
         <mkdir dir="${bin.dir}" />
@@ -202,6 +221,7 @@
                 prepare.report.dir, 
                 report.checkstyle, 
                 report.pmd, 
+                report.cpd,
                 compile,   
                 findbugs, 
                 report.findbugs, 
