@@ -101,7 +101,7 @@
         classpathref="pmd2.classpath" />
     <target name="report.pmd">
         <mkdir dir="${report.pmd.dir}" />
-        <pmd rulesetfiles="rulesets/pmd_rules.xml">
+        <pmd rulesetfiles="./pmd_rules.xml">
             <formatter type="xml" toFile="${report.pmd.dir}/pmd_report.xml" />
             <fileset dir="${src.dir}">
                 <include name="**/*.java" />
