@@ -5,9 +5,10 @@
     <target name="pmd">
      <taskdef name="pmd" classpath="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/plugins/pmd/WEB-INF/lib/pmd-core-5.2.3.jar" classname="net.sourceforge.pmd.ant.PMDTask"/>
      <pmd shortFilenames="true">
+      <sourceLanguage name="java" version="1.8"/>
       <ruleset>./pmd_rules.xml</ruleset>
       <formatter type="html" toFile="pmd_report.html"/>
-      <fileset dir="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/workspace/Master-Base-Test/src/**">
+      <fileset dir="C://Bitnami/jenkins-1.642-0/apps/jenkins/jenkins_home/workspace/Master-Base-Test/src/">
        <include name="**/*.java"/>
       </fileset>
      </pmd>
