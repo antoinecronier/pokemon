@@ -150,7 +150,7 @@
 
             <batchtest todir="${report.temp.dir}">
                 <fileset dir="${src.dir}">
-                    <include name="**/*Test.java" />
+                    <include name="**/**/*Test*.java" />
                 </fileset>
             </batchtest>
         </junit>
