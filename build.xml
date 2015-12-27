@@ -127,6 +127,7 @@
                srcdir="${src.dir}"
                destdir="${bin.dir}"
                classpathref="run.classpath"
+               classpath="${junit.home.dir}/junit-4.10.jar}"
         />
     </target>
 
