@@ -222,6 +222,8 @@
                 report.checkstyle, 
                 report.pmd, 
                 report.cpd,
+                junit,
+                report.junit,
                 compile,   
                 findbugs, 
                 report.findbugs, 
