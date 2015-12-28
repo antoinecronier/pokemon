@@ -14,7 +14,7 @@
     <property name="pmd.home.dir" value="C:/ContinuousIntegration/pmd-bin-5.4.1" />
     <property name="junit.home.dir" value="C:/ContinuousIntegration/junit" />
     <property name="lib.dir" location="${basedir}/lib" />
-    <property name="src.dir" location="${basedir}/src" />
+    <property name="src.dir" location="${basedir}/src/core" />
     <property name="bin.dir" location="${basedir}/bin" />
     <property name="htm.dir" location="${basedir}/html" />
     <property name="report.dir" location="${basedir}/report" />
