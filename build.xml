@@ -126,9 +126,12 @@
         <javac debug="true"
                srcdir="${src.dir}"
                destdir="${bin.dir}"
-               classpathref="run.classpath"
-               classpath="${junit.home.dir}/junit-4.10.jar}"
-        />
+               includeantruntime="true"
+               classpathref="run.classpath">
+            <classpath>
+                <path id="org.junit" location="${junit.home.dir}/junit-4.10.jar}" /> 
+            </classpath>
+        </javac>
     </target>
 
     <!-- -->
