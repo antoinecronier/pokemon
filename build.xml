@@ -123,7 +123,7 @@
     <!-- -->
     <target name="compile" depends="clean" description="Compile the entire project.">
         <mkdir dir="${bin.dir}" />
-        <javac debug="false"
+        <javac debug="true"
                srcdir="${src.dir}"
                destdir="${bin.dir}"
                classpathref="run.classpath"
@@ -139,10 +139,6 @@
         <mkdir dir="${report.temp.dir}" />
 
         <junit printsummary="yes" fork="yes" haltonfailure="no">
-
-            <!-- Note the classpath order: instrumented classes are before 
-                 the original (uninstrumented) classes.  This is important. -->
-            <classpath location="${instrumented.dir}" />
             <classpath location="${bin.dir}" />
             <classpath location="${junit.home.dir}/junit-4.10.jar}" />
 
