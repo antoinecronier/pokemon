@@ -128,9 +128,9 @@
                destdir="${bin.dir}"
                includeantruntime="true"
                classpathref="run.classpath">
-            <classpath>
+            <!--<classpath>
                 <path id="org.junit" location="${junit.home.dir}/junit-4.10.jar}" /> 
-            </classpath>
+            </classpath>-->
         </javac>
     </target>
 
