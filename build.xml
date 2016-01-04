@@ -170,8 +170,8 @@
             <formatter type="xml" />
 
             <batchtest todir="${report.temp.dir}">
-                <fileset dir="${test.dir}">
-                    <include name="**/*Test*.java" />
+                <fileset dir="${bin.dir}">
+                    <include name="test/**/*.java" />
                 </fileset>
             </batchtest>
         </junit>
