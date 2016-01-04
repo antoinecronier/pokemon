@@ -27,10 +27,9 @@
     <property name="instrumented.dir" location="${basedir}/instrumented" />
     <property name="report.temp.dir" location="${report.dir}/temp" />
 
-    <!--<path id="run.classpath">
+    <path id="run.classpath">
         <pathelement path="${bin.dir}" />
-        <pathelement path="${junit.home.dir}/junit-4.10.jar}"/>
-    </path>-->
+    </path>
 
     <!-- -->
     <target name="clean" description="Delete all result to start with a clean build.">
