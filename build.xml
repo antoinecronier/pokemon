@@ -92,9 +92,6 @@
                   outputFile="${report.findbugs.dir}/findbugs.xml"
         >
             <class location="${bin.dir}" />
-            <auxClasspath>
-                <fileset file="${basedir}/lib/junit-4.10.jar.jar" />
-            </auxClasspath>
         </findbugs>
     </target>
 
