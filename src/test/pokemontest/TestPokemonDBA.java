@@ -1,4 +1,4 @@
-package test.pokemontest;
+package pokemontest;
 
 import static org.junit.Assert.*;
 
