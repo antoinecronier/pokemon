@@ -171,7 +171,7 @@
             <formatter type="xml" />
 
             <batchtest todir="${report.temp.dir}">
-                <fileset dir="${bin.dir.test}">
+                <fileset dir="${test.dir}">
                     <include name="**/*.java" />
                 </fileset>
             </batchtest>
