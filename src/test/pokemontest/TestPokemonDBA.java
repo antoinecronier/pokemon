@@ -17,4 +17,10 @@ public class TestPokemonDBA {
 		assertFalse(false);
 	}
 
+	@Test
+	public void test1() {
+		int a = 1;
+		a += 1;
+		assertTrue(a == 2);
+	}
 }
