@@ -8,13 +8,23 @@
         - junit.
     </description>
 
-    <property name="integration.base.path" file="ant.properties" value="" />
+    <property environment="env" />
+    <condition property="checkstyle.home.dir" value="${env.CHECKSTYLE_HOME}">
+        <isset property="env.CHECKSTYLE_HOME" />
+    </condition>
+    <condition property="findbugs.home.dir" value="${env.FINDBUGS_HOME}">
+        <isset property="env.FINDBUGS_HOME" />
+    </condition>
+    <condition property="pmd.home.dir" value="${env.PMD_HOME}">
+        <isset property="env.PMD_HOME" />
+    </condition>
+    <condition property="junit.home.dir" value="${env.JUNIT_HOME}">
+        <isset property="env.JUNIT_HOME" />
+    </condition>
+
+    <property file="ant.properties" />
 
      <!-- Change the paths to your individual installation directories -->
-    <property name="checkstyle.home.dir" location="${integration.base.path}/checkstyle-6.13" />
-    <property name="findbugs.home.dir" value="${integration.base.path}/findbugs-3.0.1" />
-    <property name="pmd.home.dir" value="${integration.base.path}/pmd-bin-5.4.1" />
-    <property name="junit.home.dir" value="${integration.base.path}/junit" />
     <property name="lib.dir" location="${basedir}/libs" />
     <property name="src.dir" location="${basedir}/src/main" />
     <property name="test.dir" location="${basedir}/src/test" />
