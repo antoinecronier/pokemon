@@ -142,9 +142,7 @@
         <mkdir dir="${report.temp.dir}" />
 
         <junit printsummary="yes" fork="yes" haltonfailure="no">
-            <classpath>
-                <path id="org.junit" location="${junit.home.dir}/junit-4.10.jar}"/>
-            </classpath>
+            <classpath location="${junit.home.dir}/junit-4.10.jar}"/>
             <classpath location="${bin.dir}" />
 
             <formatter type="plain" />
