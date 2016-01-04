@@ -143,7 +143,7 @@
         <junit printsummary="yes" haltonfailure="no">
             <classpath> 
                 <pathelement location="${bin.dir}"/> 
-                <pathelement path="${junit.home.dir}/junit-4.10.jar}"/> 
+                <pathelement location="${junit.home.dir}/junit-4.10.jar}"/> 
             </classpath>
 
             <formatter type="plain" />
