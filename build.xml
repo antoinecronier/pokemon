@@ -8,11 +8,13 @@
         - junit.
     </description>
 
+    <property name="integration.base.path" file="ant.properties" />
+
      <!-- Change the paths to your individual installation directories -->
-    <property name="checkstyle.home.dir" location="C:/ContinuousIntegration/checkstyle-6.13" />
-    <property name="findbugs.home.dir" value="C:/ContinuousIntegration/findbugs-3.0.1" />
-    <property name="pmd.home.dir" value="C:/ContinuousIntegration/pmd-bin-5.4.1" />
-    <property name="junit.home.dir" value="C:/ContinuousIntegration/junit" />
+    <property name="checkstyle.home.dir" location="${integration.base.path}/checkstyle-6.13" />
+    <property name="findbugs.home.dir" value="${integration.base.path}/findbugs-3.0.1" />
+    <property name="pmd.home.dir" value="${integration.base.path}/pmd-bin-5.4.1" />
+    <property name="junit.home.dir" value="${integration.base.path}/junit" />
     <property name="lib.dir" location="${basedir}/libs" />
     <property name="src.dir" location="${basedir}/src/main" />
     <property name="test.dir" location="${basedir}/src/test" />
