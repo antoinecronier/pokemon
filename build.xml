@@ -141,9 +141,8 @@
         <mkdir dir="${report.temp.dir}" />
 
         <junit printsummary="yes" haltonfailure="no">
-            <classpath refid="batchtest.path" />
-            <classpath location="${bin.dir}" />
             <classpath> 
+                <pathelement location="${bin.dir}"/> 
                 <pathelement path="${junit.home.dir}/junit-4.10.jar}"/> 
             </classpath>
 
