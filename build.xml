@@ -17,7 +17,6 @@
     <property name="src.dir" location="${basedir}/src/main" />
     <property name="test.dir" location="${basedir}/src/test" />
     <property name="bin.dir" location="${basedir}/bin" />
-    <property name="bin.dir.test" location="${bin.dir}/test" />
     <property name="htm.dir" location="${basedir}/html" />
     <property name="report.dir" location="${basedir}/report" />
 
@@ -31,6 +30,14 @@
 
     <path id="run.classpath">
         <pathelement path="${bin.dir}" />
+    </path>
+    
+    <path id="test.classpath">
+        <path refid="run.classpath" />
+        <pathelement location="${bin.dir}/test"/> 
+        <fileset dir="libs">
+            <include name="junit-4.10.jar"/>
+        </fileset>
     </path>
 
     <!-- -->
@@ -86,9 +93,10 @@
             <include name="*.jar" />
         </fileset>
     </path>
-    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" 
-        classpathref="pmd2.classpath" />
+    
     <target name="report.pmd">
+        <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd2.classpath" />
+        
         <mkdir dir="${report.pmd.dir}" />
         <pmd rulesetfiles="./pmd_rules.xml">
             <formatter type="xml" toFile="${report.pmd.dir}/pmd_report.xml" />
@@ -102,10 +110,11 @@
         />
     </target>
 
-    <taskdef  name="cpd"
+    <target name="report.cpd">
+        <taskdef  name="cpd"
               classpathref="pmd2.classpath"
               classname="net.sourceforge.pmd.cpd.CPDTask" />
-    <target name="report.cpd">
+
         <cpd
             minimumTokenCount="100"
             language="java"
@@ -129,50 +138,38 @@
                destdir="${bin.dir}"
                includeantruntime="true"
                classpathref="run.classpath">
-        </javac>
-    </target>
-
-    <!-- -->
-    <target name="compile-test" description="Compile the entire project.">
-        <mkdir dir="${bin.dir}" />
-        <javac debug="true"
-               srcdir="${test.dir}"
-               destdir="${bin.dir}"
-               includeantruntime="true"
-               classpathref="run.classpath">
-            <classpath> 
-                <pathelement location="${bin.dir}"/> 
-                <fileset dir="libs">
-                    <include name="junit-4.10.jar"/>
-                </fileset>
-            </classpath>
             <!--<classpath>
                 <path id="org.junit" location="${junit.home.dir}/junit-4.10.jar}" /> 
             </classpath>-->
         </javac>
     </target>
+    
+    <target name="compile-test" depends="compile" description="Compile the entire project.">
+        <mkdir dir="${bin.dir}" />
+        <javac debug="true"
+               srcdir="${test.dir}"
+               destdir="${bin.dir}"
+               includeantruntime="true"
+               classpathref="test.classpath">
+        </javac>
+    </target>
 
     <!-- -->
     <target name="junit"
-            depends="clean, compile, compile-test"
+            depends="compile-test"
             description="Run all junit test cases."
     >
         <mkdir dir="${report.temp.dir}" />
 
-        <junit printsummary="yes" haltonfailure="no">
-            <classpath> 
-                <pathelement location="${bin.dir.test}"/> 
-                <fileset dir="libs">
-                    <include name="junit-4.10.jar"/>
-                </fileset>
-            </classpath>
+        <junit printsummary="yes" haltonfailure="no" fork="true">
+            <classpath refid="test.classpath" />
 
             <formatter type="plain" />
             <formatter type="xml" />
 
             <batchtest todir="${report.temp.dir}">
                 <fileset dir="${test.dir}">
-                    <include name="**/*.java" />
+                    <include name="**/*Test*.java" />
                 </fileset>
             </batchtest>
         </junit>
