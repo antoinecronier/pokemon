@@ -1,8 +1,8 @@
-package core.dao;
+package main.core.dao;
 
 import java.util.ArrayList;
 
-import core.pokemon.Badges;
+import main.core.pokemon.Badges;
 
 public interface BadgesDAO {
 	public ArrayList<Badges> Select();

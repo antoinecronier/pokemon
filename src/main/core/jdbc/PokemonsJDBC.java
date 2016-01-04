@@ -1,4 +1,4 @@
-package core.jdbc;
+package main.core.jdbc;
 
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -8,10 +8,10 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import core.pokemon.Attaques;
-import core.pokemon.Pokemons;
-import core.pokemon.TypeDePokemons;
-import core.dao.PokemonsDAO;
+import main.core.pokemon.Attaques;
+import main.core.pokemon.Pokemons;
+import main.core.pokemon.TypeDePokemons;
+import main.core.dao.PokemonsDAO;
 
 public class PokemonsJDBC extends BaseJDBC implements PokemonsDAO {
 

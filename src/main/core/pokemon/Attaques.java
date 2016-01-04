@@ -1,4 +1,4 @@
-package core.pokemon;
+package main.core.pokemon;
 
 public class Attaques {
 	private int id_attaques;

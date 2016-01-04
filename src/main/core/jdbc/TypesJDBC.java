@@ -1,4 +1,4 @@
-package core.jdbc;
+package main.core.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import core.pokemon.Types;
-import core.dao.TypesDAO;
+import main.core.pokemon.Types;
+import main.core.dao.TypesDAO;
 
 public class TypesJDBC extends BaseJDBC implements TypesDAO {
 

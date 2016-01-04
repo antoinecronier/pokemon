@@ -1,8 +1,8 @@
-package core.dao;
+package main.core.dao;
 
 import java.util.ArrayList;
 
-import core.pokemon.Zones;
+import main.core.pokemon.Zones;
 
 public interface ZonesDAO {
 	public ArrayList<Zones> Select();

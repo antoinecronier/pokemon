@@ -1,4 +1,4 @@
-package core.jdbc;
+package main.core.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import core.pokemon.Attaques;
-import core.dao.AttaquesDAO;
+import main.core.pokemon.Attaques;
+import main.core.dao.AttaquesDAO;
 
 public class AttaquesJDBC extends BaseJDBC implements AttaquesDAO{
 

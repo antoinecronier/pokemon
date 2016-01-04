@@ -1,8 +1,8 @@
-package core.dao;
+package main.core.dao;
 
 import java.util.ArrayList;
 
-import core.pokemon.Types;
+import main.core.pokemon.Types;
 
 public interface TypesDAO {
 	/**

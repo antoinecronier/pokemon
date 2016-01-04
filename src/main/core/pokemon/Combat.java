@@ -1,10 +1,10 @@
-package core.pokemon;
+package main.core.pokemon;
 
 import java.util.ArrayList;
 
-import core.jdbc.AttaquesJDBC;
-import core.jdbc.TypeDePokemonsJDBC;
-import core.jdbc.TypesJDBC;
+import main.core.jdbc.AttaquesJDBC;
+import main.core.jdbc.TypeDePokemonsJDBC;
+import main.core.jdbc.TypesJDBC;
 
 public class Combat {
 	ArrayList<Pokemons> joueur1;

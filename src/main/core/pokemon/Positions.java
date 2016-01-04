@@ -1,4 +1,4 @@
-package core.pokemon;
+package main.core.pokemon;
 
 public class Positions {
 	private int id_positions;

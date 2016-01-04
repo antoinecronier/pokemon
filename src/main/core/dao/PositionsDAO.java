@@ -1,8 +1,8 @@
-package core.dao;
+package main.core.dao;
 
 import java.util.ArrayList;
 
-import core.pokemon.Positions;
+import main.core.pokemon.Positions;
 
 public interface PositionsDAO {
 	public ArrayList<Positions> Select();

@@ -1,9 +1,9 @@
-package core.jdbc;
+package main.core.jdbc;
 
 import java.util.ArrayList;
 
-import core.pokemon.Positions;
-import core.dao.PositionsDAO;
+import main.core.pokemon.Positions;
+import main.core.dao.PositionsDAO;
 
 public class PositionsJDBC extends BaseJDBC implements PositionsDAO {
 

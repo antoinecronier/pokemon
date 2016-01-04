@@ -1,8 +1,8 @@
-package core.dao;
+package main.core.dao;
 
 import java.util.ArrayList;
 
-import core.pokemon.Attaques;
+import main.core.pokemon.Attaques;
 
 
 public interface AttaquesDAO {

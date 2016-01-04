@@ -1,8 +1,8 @@
-package core.dao;
+package main.core.dao;
 
 import java.util.ArrayList;
 
-import core.pokemon.Pokemons;
+import main.core.pokemon.Pokemons;
 
 public interface PokemonsDAO {
 	public ArrayList<Pokemons> Select();

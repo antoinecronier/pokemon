@@ -1,4 +1,4 @@
-package core.pokemon;
+package main.core.pokemon;
 
 import java.util.ArrayList;
 import java.util.Date;

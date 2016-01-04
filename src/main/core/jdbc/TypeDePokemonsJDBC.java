@@ -1,4 +1,4 @@
-package core.jdbc;
+package main.core.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import core.pokemon.TypeDePokemons;
-import core.pokemon.Types;
-import core.dao.TypeDePokemonsDAO;
+import main.core.pokemon.TypeDePokemons;
+import main.core.pokemon.Types;
+import main.core.dao.TypeDePokemonsDAO;
 
 public class TypeDePokemonsJDBC extends BaseJDBC implements TypeDePokemonsDAO {
 

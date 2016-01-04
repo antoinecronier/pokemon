@@ -1,10 +1,10 @@
-package core.jdbc;
+package main.core.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import core.dao.BaseDAO;
+import main.core.dao.BaseDAO;
 
 public class BaseJDBC implements BaseDAO{
 	private Connection connection = null;

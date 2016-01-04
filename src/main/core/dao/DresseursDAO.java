@@ -1,8 +1,8 @@
-package core.dao;
+package main.core.dao;
 
 import java.util.ArrayList;
 
-import core.pokemon.Dresseurs;
+import main.core.pokemon.Dresseurs;
 
 public interface DresseursDAO {
 	public ArrayList<Dresseurs> Select();
