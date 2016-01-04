@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.1.1" timestamp="2016-01-04T16:54:22.601">
+<file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\AttaquesJDBC.java">
+<violation beginline="32" endline="33" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="main.core.jdbc" class="AttaquesJDBC" method="Select" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="63" endline="64" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="main.core.jdbc" class="AttaquesJDBC" method="Select" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\BaseJDBC.java">
+<violation beginline="16" endline="18" begincolumn="25" endcolumn="117" rule="IfStmtsMustUseBraces" ruleset="Braces" package="main.core.jdbc" class="BaseJDBC" method="EstablishConnection" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="38" endline="40" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="main.core.jdbc" class="BaseJDBC" method="CloseConnection" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\TypesJDBC.java">
+<violation beginline="28" endline="28" begincolumn="60" endcolumn="69" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="main.core.jdbc" class="TypesJDBC" method="Select" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;id_types&quot; appears 4 times in this file; the first occurrence is on line 28
+</violation>
+<violation beginline="29" endline="29" begincolumn="65" endcolumn="69" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="main.core.jdbc" class="TypesJDBC" method="Select" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;nom&quot; appears 4 times in this file; the first occurrence is on line 29
+</violation>
+</file>
+<file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Combat.java">
+<violation beginline="10" endline="10" begincolumn="9" endcolumn="36" rule="DefaultPackage" ruleset="Controversial" package="main.core.pokemon" class="Combat" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="11" endline="11" begincolumn="9" endcolumn="36" rule="DefaultPackage" ruleset="Controversial" package="main.core.pokemon" class="Combat" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#DefaultPackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+</file>
+</pmd>

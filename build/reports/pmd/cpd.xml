@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<pmd-cpd>
+<duplication lines="11" tokens="112">
+<file line="23" path="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\AttaquesJDBC.java"/>
+<file line="54" path="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\AttaquesJDBC.java"/>
+<codefragment><![CDATA[               while(resultSet.next()){
+            	   attaque = new Attaques();
+            	   attaque.setId_attaques(Integer.parseInt(resultSet.getString("id_attaques")));
+            	   attaque.setNom(resultSet.getString("nom"));
+            	   attaque.setPuissance(Integer.parseInt(resultSet.getString("puissance")));
+            	   attaque.setPrecision(Integer.parseInt(resultSet.getString("precis")));
+            	   TypesJDBC types = new TypesJDBC();
+            	   try {
+            		   attaque.setType(types.Select(Integer.parseInt(resultSet.getString("id_types"))));
+				} catch (Exception e) {
+				}]]></codefragment>
+</duplication>
+</pmd-cpd>

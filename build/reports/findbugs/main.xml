@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1451922857368" analysisTimestamp="1451922857437" release="">
+  <Project projectName="">
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\AttaquesDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\BadgesDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\BaseDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\DresseursDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\PokemonsDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\PositionsDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\TypeDePokemonsDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\TypesDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\ZonesDAO.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\jdbc\AttaquesJDBC.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\jdbc\BaseJDBC.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\jdbc\PokemonsJDBC.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\jdbc\PositionsJDBC.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\jdbc\TypeDePokemonsJDBC.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\jdbc\TypesJDBC.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Attaques.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Badges.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Combat.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Dresseurs.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Pokemons.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Positions.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\TypeDePokemons.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Types.class</Jar>
+    <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Zones.class</Jar>
+    <AuxClasspathEntry>C:\Users\tactfactory\.gradle\caches\modules-2\files-2.1\commons-collections\commons-collections\3.2\f951934aa5ae5a88d7e6dfaa6d32307d834a88be\commons-collections-3.2.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\AttaquesDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\BadgesDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\BaseDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\DresseursDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\PokemonsDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\PositionsDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\TypeDePokemonsDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\TypesDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\ZonesDAO.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\AttaquesJDBC.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\BaseJDBC.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\PokemonsJDBC.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\PositionsJDBC.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\TypeDePokemonsJDBC.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\TypesJDBC.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Attaques.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Badges.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Combat.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Dresseurs.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Pokemons.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Positions.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\TypeDePokemons.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Types.java</SrcDir>
+    <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Zones.java</SrcDir>
+  </Project>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.AttaquesJDBC">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="72" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="17" end="43" startBytecode="0" endBytecode="433" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.AttaquesJDBC">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="72" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Attaques;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="48" end="72" startBytecode="0" endBytecode="375" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.AttaquesJDBC">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="72" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="17" end="43" startBytecode="0" endBytecode="433" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="20" end="20" startBytecode="21" endBytecode="21" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="22" end="22" startBytecode="27" endBytecode="27" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="23" end="23" startBytecode="30" endBytecode="30" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="39" end="39" startBytecode="174" endBytecode="174" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="40" end="40" startBytecode="175" endBytecode="175" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="42" end="42" startBytecode="179" endBytecode="179" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="43" end="43" startBytecode="188" endBytecode="188" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.AttaquesJDBC">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="72" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="17" end="43" startBytecode="0" endBytecode="433" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="19" end="19" startBytecode="12" endBytecode="12" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="20" end="20" startBytecode="18" endBytecode="18" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="22" end="22" startBytecode="27" endBytecode="27" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="23" end="23" startBytecode="30" endBytecode="30" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="39" end="39" startBytecode="174" endBytecode="174" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="40" end="40" startBytecode="175" endBytecode="175" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="42" end="42" startBytecode="179" endBytecode="179" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="43" end="43" startBytecode="188" endBytecode="188" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.AttaquesJDBC">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="72" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Attaques;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="48" end="72" startBytecode="0" endBytecode="375" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="51" end="51" startBytecode="32" endBytecode="32" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="54" end="54" startBytecode="39" endBytecode="39" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="69" end="69" startBytecode="175" endBytecode="175" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="70" end="70" startBytecode="176" endBytecode="176" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="72" end="72" startBytecode="180" endBytecode="180" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.AttaquesJDBC">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="72" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Attaques;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="48" end="72" startBytecode="0" endBytecode="375" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="50" end="50" startBytecode="6" endBytecode="6" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="51" end="51" startBytecode="12" endBytecode="12" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="54" end="54" startBytecode="39" endBytecode="39" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="69" end="69" startBytecode="175" endBytecode="175" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="70" end="70" startBytecode="176" endBytecode="176" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="72" end="72" startBytecode="180" endBytecode="180" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.BaseJDBC">
+      <SourceLine classname="main.core.jdbc.BaseJDBC" start="9" end="41" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.BaseJDBC" name="CloseConnection" signature="()V" isStatic="false">
+      <SourceLine classname="main.core.jdbc.BaseJDBC" start="35" end="41" startBytecode="0" endBytecode="86" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.BaseJDBC">
+      <SourceLine classname="main.core.jdbc.BaseJDBC" start="9" end="41" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.BaseJDBC" name="EstablishConnection" signature="()Ljava/sql/Connection;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.BaseJDBC" start="15" end="29" startBytecode="0" endBytecode="160" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.PokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="16" end="56" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="20" end="50" startBytecode="0" endBytecode="544" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.PokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="16" end="56" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Pokemons;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="56" end="56" startBytecode="0" endBytecode="53" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.PokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="16" end="56" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="20" end="50" startBytecode="0" endBytecode="544" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="23" end="23" startBytecode="21" endBytecode="21" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="25" end="25" startBytecode="27" endBytecode="27" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="26" end="26" startBytecode="30" endBytecode="30" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="46" end="46" startBytecode="261" endBytecode="261" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="47" end="47" startBytecode="262" endBytecode="262" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="49" end="49" startBytecode="266" endBytecode="266" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="50" end="50" startBytecode="275" endBytecode="275" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.PokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="16" end="56" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="20" end="50" startBytecode="0" endBytecode="544" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="22" end="22" startBytecode="12" endBytecode="12" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="23" end="23" startBytecode="18" endBytecode="18" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="25" end="25" startBytecode="27" endBytecode="27" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="26" end="26" startBytecode="30" endBytecode="30" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="46" end="46" startBytecode="261" endBytecode="261" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="47" end="47" startBytecode="262" endBytecode="262" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="49" end="49" startBytecode="266" endBytecode="266" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="50" end="50" startBytecode="275" endBytecode="275" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.PositionsJDBC">
+      <SourceLine classname="main.core.jdbc.PositionsJDBC" start="8" end="19" sourcefile="PositionsJDBC.java" sourcepath="main/core/jdbc/PositionsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.PositionsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.PositionsJDBC" start="13" end="13" startBytecode="0" endBytecode="43" sourcefile="PositionsJDBC.java" sourcepath="main/core/jdbc/PositionsJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.PositionsJDBC">
+      <SourceLine classname="main.core.jdbc.PositionsJDBC" start="8" end="19" sourcefile="PositionsJDBC.java" sourcepath="main/core/jdbc/PositionsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.PositionsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Positions;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.PositionsJDBC" start="19" end="19" startBytecode="0" endBytecode="53" sourcefile="PositionsJDBC.java" sourcepath="main/core/jdbc/PositionsJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.TypeDePokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="80" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="18" end="53" startBytecode="0" endBytecode="519" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.jdbc.TypeDePokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="80" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/TypeDePokemons;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="80" end="80" startBytecode="0" endBytecode="53" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypeDePokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="80" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="EstDeType" signature="(I)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="57" end="74" startBytecode="0" endBytecode="293" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="63" end="63" startBytecode="48" endBytecode="48" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="65" end="65" startBytecode="55" endBytecode="55" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="70" end="70" startBytecode="109" endBytecode="109" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="71" end="71" startBytecode="111" endBytecode="111" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="74" end="74" startBytecode="116" endBytecode="116" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypeDePokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="80" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="EstDeType" signature="(I)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="57" end="74" startBytecode="0" endBytecode="293" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="61" end="61" startBytecode="20" endBytecode="20" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="62" end="62" startBytecode="27" endBytecode="27" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="63" end="63" startBytecode="48" endBytecode="48" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="65" end="65" startBytecode="55" endBytecode="55" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="70" end="70" startBytecode="109" endBytecode="109" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="71" end="71" startBytecode="111" endBytecode="111" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="74" end="74" startBytecode="116" endBytecode="116" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypeDePokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="80" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="18" end="53" startBytecode="0" endBytecode="519" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="22" end="22" startBytecode="21" endBytecode="21" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="24" end="24" startBytecode="27" endBytecode="27" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="25" end="25" startBytecode="30" endBytecode="30" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="48" end="48" startBytecode="214" endBytecode="214" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="49" end="49" startBytecode="215" endBytecode="215" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="51" end="51" startBytecode="219" endBytecode="219" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="53" end="53" startBytecode="228" endBytecode="228" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypeDePokemonsJDBC">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="80" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="18" end="53" startBytecode="0" endBytecode="519" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="20" end="20" startBytecode="12" endBytecode="12" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="21" end="21" startBytecode="18" endBytecode="18" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="22" end="22" startBytecode="21" endBytecode="21" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="24" end="24" startBytecode="27" endBytecode="27" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="25" end="25" startBytecode="30" endBytecode="30" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="48" end="48" startBytecode="214" endBytecode="214" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="49" end="49" startBytecode="215" endBytecode="215" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="51" end="51" startBytecode="219" endBytecode="219" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="53" end="53" startBytecode="228" endBytecode="228" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="44" end="65" startBytecode="0" endBytecode="353" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="47" end="47" startBytecode="21" endBytecode="21" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="49" end="49" startBytecode="27" endBytecode="27" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="50" end="50" startBytecode="30" endBytecode="30" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="61" end="61" startBytecode="132" endBytecode="132" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="62" end="62" startBytecode="133" endBytecode="133" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="64" end="64" startBytecode="137" endBytecode="137" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="65" end="65" startBytecode="146" endBytecode="146" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="44" end="65" startBytecode="0" endBytecode="353" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="46" end="46" startBytecode="12" endBytecode="12" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="47" end="47" startBytecode="18" endBytecode="18" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="49" end="49" startBytecode="27" endBytecode="27" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="50" end="50" startBytecode="30" endBytecode="30" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="61" end="61" startBytecode="132" endBytecode="132" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="62" end="62" startBytecode="133" endBytecode="133" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="64" end="64" startBytecode="137" endBytecode="137" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="65" end="65" startBytecode="146" endBytecode="146" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Types;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="19" end="39" startBytecode="0" endBytecode="303" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="23" end="23" startBytecode="32" endBytecode="32" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="25" end="25" startBytecode="39" endBytecode="39" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="36" end="36" startBytecode="129" endBytecode="129" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="37" end="37" startBytecode="130" endBytecode="130" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="39" end="39" startBytecode="134" endBytecode="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Types;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="19" end="39" startBytecode="0" endBytecode="303" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="21" end="21" startBytecode="6" endBytecode="6" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="22" end="22" startBytecode="12" endBytecode="12" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="23" end="23" startBytecode="32" endBytecode="32" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="25" end="25" startBytecode="39" endBytecode="39" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="36" end="36" startBytecode="129" endBytecode="129" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="37" end="37" startBytecode="130" endBytecode="130" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="39" end="39" startBytecode="134" endBytecode="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="SelectFaible" signature="(I)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="94" end="115" startBytecode="0" endBytecode="349" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="97" end="97" startBytecode="38" endBytecode="38" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="101" end="101" startBytecode="45" endBytecode="45" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="102" end="102" startBytecode="48" endBytecode="48" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="111" end="111" startBytecode="126" endBytecode="126" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="112" end="112" startBytecode="127" endBytecode="127" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="114" end="114" startBytecode="131" endBytecode="131" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="115" end="115" startBytecode="140" endBytecode="140" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="SelectFaible" signature="(I)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="94" end="115" startBytecode="0" endBytecode="349" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="96" end="96" startBytecode="12" endBytecode="12" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="97" end="97" startBytecode="18" endBytecode="18" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="101" end="101" startBytecode="45" endBytecode="45" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="102" end="102" startBytecode="48" endBytecode="48" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="111" end="111" startBytecode="126" endBytecode="126" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="112" end="112" startBytecode="127" endBytecode="127" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="114" end="114" startBytecode="131" endBytecode="131" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="115" end="115" startBytecode="140" endBytecode="140" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="SelectFort" signature="(I)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="69" end="90" startBytecode="0" endBytecode="349" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="72" end="72" startBytecode="38" endBytecode="38" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="76" end="76" startBytecode="45" endBytecode="45" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="77" end="77" startBytecode="48" endBytecode="48" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="86" end="86" startBytecode="126" endBytecode="126" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="87" end="87" startBytecode="127" endBytecode="127" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="89" end="89" startBytecode="131" endBytecode="131" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="90" end="90" startBytecode="140" endBytecode="140" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="main.core.jdbc.TypesJDBC">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="115" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Class>
+    <Method classname="main.core.jdbc.TypesJDBC" name="SelectFort" signature="(I)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="69" end="90" startBytecode="0" endBytecode="349" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="71" end="71" startBytecode="12" endBytecode="12" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="72" end="72" startBytecode="18" endBytecode="18" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="76" end="76" startBytecode="45" endBytecode="45" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="77" end="77" startBytecode="48" endBytecode="48" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="86" end="86" startBytecode="126" endBytecode="126" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="87" end="87" startBytecode="127" endBytecode="127" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="89" end="89" startBytecode="131" endBytecode="131" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="main.core.jdbc.TypesJDBC" start="90" end="90" startBytecode="140" endBytecode="140" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="main.core.pokemon.Combat">
+      <SourceLine classname="main.core.pokemon.Combat" start="9" end="66" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Class>
+    <Method classname="main.core.pokemon.Combat" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="main.core.pokemon.Combat" start="14" end="41" startBytecode="0" endBytecode="99" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Method>
+    <LocalVariable name="attaques" register="3" pc="29" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="main.core.pokemon.Combat" start="21" end="21" startBytecode="28" endBytecode="28" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="attaques"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="main.core.pokemon.Combat">
+      <SourceLine classname="main.core.pokemon.Combat" start="9" end="66" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Class>
+    <Method classname="main.core.pokemon.Combat" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="main.core.pokemon.Combat" start="14" end="41" startBytecode="0" endBytecode="99" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Method>
+    <LocalVariable name="type" register="6" pc="55" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="main.core.pokemon.Combat" start="26" end="26" startBytecode="53" endBytecode="53" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="type"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="main.core.pokemon.Combat">
+      <SourceLine classname="main.core.pokemon.Combat" start="9" end="66" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Class>
+    <Method classname="main.core.pokemon.Combat" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="main.core.pokemon.Combat" start="14" end="41" startBytecode="0" endBytecode="99" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Method>
+    <LocalVariable name="typeDePokemons" register="5" pc="45" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="main.core.pokemon.Combat" start="24" end="24" startBytecode="43" endBytecode="43" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="typeDePokemons"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="main.core.pokemon.Combat">
+      <SourceLine classname="main.core.pokemon.Combat" start="9" end="66" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Class>
+    <Field classname="main.core.pokemon.Combat" name="joueur1" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.pokemon.Combat" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE">
+    <Class classname="main.core.pokemon.Combat">
+      <SourceLine classname="main.core.pokemon.Combat" start="9" end="66" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Class>
+    <Field classname="main.core.pokemon.Combat" name="joueur2" signature="Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="main.core.pokemon.Combat" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="main.core.pokemon.Pokemons">
+      <SourceLine classname="main.core.pokemon.Pokemons" start="15" end="62" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+    </Class>
+    <Method classname="main.core.pokemon.Pokemons" name="getCapture" signature="()Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="main.core.pokemon.Pokemons" start="44" end="44" startBytecode="0" endBytecode="46" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+    </Method>
+    <Field classname="main.core.pokemon.Pokemons" name="capture" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="main.core.pokemon.Pokemons" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+    </Field>
+    <SourceLine classname="main.core.pokemon.Pokemons" start="44" end="44" startBytecode="4" endBytecode="4" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="main.core.pokemon.Pokemons">
+      <SourceLine classname="main.core.pokemon.Pokemons" start="15" end="62" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+    </Class>
+    <Method classname="main.core.pokemon.Pokemons" name="setCapture" signature="(Ljava/util/Date;)V" isStatic="false">
+      <SourceLine classname="main.core.pokemon.Pokemons" start="48" end="49" startBytecode="0" endBytecode="61" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+    </Method>
+    <Field classname="main.core.pokemon.Pokemons" name="capture" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="main.core.pokemon.Pokemons" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+    </Field>
+    <LocalVariable name="capture" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="main.core.pokemon.Pokemons" start="48" end="48" startBytecode="2" endBytecode="2" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
+    <Class classname="main.core.pokemon.Types">
+      <SourceLine classname="main.core.pokemon.Types" start="27" end="87" sourcefile="Types.java" sourcepath="main/core/pokemon/Types.java"/>
+    </Class>
+    <Method classname="main.core.pokemon.Types" name="DidItIsEffective" signature="(Lmain/core/pokemon/Types;)Z" isStatic="false">
+      <SourceLine classname="main.core.pokemon.Types" start="79" end="87" startBytecode="0" endBytecode="140" sourcefile="Types.java" sourcepath="main/core/pokemon/Types.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 4 Jan 2016 16:54:17 +0100" total_classes="24" referenced_classes="49" total_bugs="36" total_size="640" num_packages="3" java_version="1.8.0_65" vm_version="25.65-b01" cpu_seconds="12.89" clock_seconds="3.96" peak_mbytes="137.13" alloc_mbytes="1803.00" gc_seconds="0.05" priority_2="36">
+    <PackageStats package="main.core.dao" total_bugs="0" total_types="9" total_size="27">
+      <ClassStats class="main.core.dao.AttaquesDAO" sourceFile="AttaquesDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.BadgesDAO" sourceFile="BadgesDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.BaseDAO" sourceFile="BaseDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.DresseursDAO" sourceFile="DresseursDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.PokemonsDAO" sourceFile="PokemonsDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.PositionsDAO" sourceFile="PositionsDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.TypeDePokemonsDAO" sourceFile="TypeDePokemonsDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.TypesDAO" sourceFile="TypesDAO.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="main.core.dao.ZonesDAO" sourceFile="ZonesDAO.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="main.core.jdbc" total_bugs="28" total_types="6" total_size="235" priority_2="28">
+      <ClassStats class="main.core.jdbc.AttaquesJDBC" sourceFile="AttaquesJDBC.java" interface="false" size="48" bugs="6" priority_2="6"/>
+      <ClassStats class="main.core.jdbc.BaseJDBC" sourceFile="BaseJDBC.java" interface="false" size="22" bugs="2" priority_2="2"/>
+      <ClassStats class="main.core.jdbc.PokemonsJDBC" sourceFile="PokemonsJDBC.java" interface="false" size="32" bugs="4" priority_2="4"/>
+      <ClassStats class="main.core.jdbc.PositionsJDBC" sourceFile="PositionsJDBC.java" interface="false" size="7" bugs="2" priority_2="2"/>
+      <ClassStats class="main.core.jdbc.TypeDePokemonsJDBC" sourceFile="TypeDePokemonsJDBC.java" interface="false" size="52" bugs="6" priority_2="6"/>
+      <ClassStats class="main.core.jdbc.TypesJDBC" sourceFile="TypesJDBC.java" interface="false" size="74" bugs="8" priority_2="8"/>
+    </PackageStats>
+    <PackageStats package="main.core.pokemon" total_bugs="8" total_types="9" total_size="378" priority_2="8">
+      <ClassStats class="main.core.pokemon.Attaques" sourceFile="Attaques.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="main.core.pokemon.Badges" sourceFile="Badges.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="main.core.pokemon.Combat" sourceFile="Combat.java" interface="false" size="44" bugs="5" priority_2="5"/>
+      <ClassStats class="main.core.pokemon.Dresseurs" sourceFile="Dresseurs.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="main.core.pokemon.Pokemons" sourceFile="Pokemons.java" interface="false" size="47" bugs="2" priority_2="2"/>
+      <ClassStats class="main.core.pokemon.Positions" sourceFile="Positions.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="main.core.pokemon.TypeDePokemons" sourceFile="TypeDePokemons.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="main.core.pokemon.Types" sourceFile="Types.java" interface="false" size="41" bugs="1" priority_2="1"/>
+      <ClassStats class="main.core.pokemon.Zones" sourceFile="Zones.java" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="401" invocations="432" avgMicrosecondsPerInvocation="929" maxMicrosecondsPerInvocation="23798" standardDeviationMircosecondsPerInvocation="1895"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="263" invocations="132" avgMicrosecondsPerInvocation="1998" maxMicrosecondsPerInvocation="57665" standardDeviationMircosecondsPerInvocation="6361"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="185" invocations="49" avgMicrosecondsPerInvocation="3788" maxMicrosecondsPerInvocation="42537" standardDeviationMircosecondsPerInvocation="8248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="155" invocations="224" avgMicrosecondsPerInvocation="692" maxMicrosecondsPerInvocation="13508" standardDeviationMircosecondsPerInvocation="1707"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="142" invocations="122" avgMicrosecondsPerInvocation="1171" maxMicrosecondsPerInvocation="56808" standardDeviationMircosecondsPerInvocation="5248"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="138" invocations="122" avgMicrosecondsPerInvocation="1132" maxMicrosecondsPerInvocation="14517" standardDeviationMircosecondsPerInvocation="2527"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="126" invocations="132" avgMicrosecondsPerInvocation="955" maxMicrosecondsPerInvocation="22014" standardDeviationMircosecondsPerInvocation="2241"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="113" invocations="140" avgMicrosecondsPerInvocation="812" maxMicrosecondsPerInvocation="89617" standardDeviationMircosecondsPerInvocation="7543"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="106" invocations="122" avgMicrosecondsPerInvocation="873" maxMicrosecondsPerInvocation="39777" standardDeviationMircosecondsPerInvocation="3674"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="97" invocations="59" avgMicrosecondsPerInvocation="1659" maxMicrosecondsPerInvocation="56045" standardDeviationMircosecondsPerInvocation="7345"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="97" invocations="400" avgMicrosecondsPerInvocation="243" maxMicrosecondsPerInvocation="16212" standardDeviationMircosecondsPerInvocation="941"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="74" invocations="122" avgMicrosecondsPerInvocation="610" maxMicrosecondsPerInvocation="9290" standardDeviationMircosecondsPerInvocation="1145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="69" invocations="49" avgMicrosecondsPerInvocation="1425" maxMicrosecondsPerInvocation="28740" standardDeviationMircosecondsPerInvocation="4377"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRoughConstants" totalMilliseconds="68" invocations="24" avgMicrosecondsPerInvocation="2851" maxMicrosecondsPerInvocation="62482" standardDeviationMircosecondsPerInvocation="12436"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="63" invocations="435" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="2223" standardDeviationMircosecondsPerInvocation="167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NumberConstructor" totalMilliseconds="59" invocations="24" avgMicrosecondsPerInvocation="2494" maxMicrosecondsPerInvocation="55510" standardDeviationMircosecondsPerInvocation="11056"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="54" invocations="49" avgMicrosecondsPerInvocation="1115" maxMicrosecondsPerInvocation="18208" standardDeviationMircosecondsPerInvocation="2741"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="44" invocations="38" avgMicrosecondsPerInvocation="1175" maxMicrosecondsPerInvocation="5585" standardDeviationMircosecondsPerInvocation="1525"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="42" invocations="49" avgMicrosecondsPerInvocation="859" maxMicrosecondsPerInvocation="13746" standardDeviationMircosecondsPerInvocation="2228"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="41" invocations="22" avgMicrosecondsPerInvocation="1871" maxMicrosecondsPerInvocation="6447" standardDeviationMircosecondsPerInvocation="1957"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="38" invocations="24" avgMicrosecondsPerInvocation="1616" maxMicrosecondsPerInvocation="26619" standardDeviationMircosecondsPerInvocation="5244"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="33" invocations="49" avgMicrosecondsPerInvocation="693" maxMicrosecondsPerInvocation="7274" standardDeviationMircosecondsPerInvocation="1250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnsatisfiedObligation" totalMilliseconds="32" invocations="24" avgMicrosecondsPerInvocation="1368" maxMicrosecondsPerInvocation="14271" standardDeviationMircosecondsPerInvocation="2965"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="32" invocations="24" avgMicrosecondsPerInvocation="1341" maxMicrosecondsPerInvocation="9999" standardDeviationMircosecondsPerInvocation="2695"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
