@@ -8,7 +8,7 @@
         - junit.
     </description>
 
-    <property name="integration.base.path" file="ant.properties" />
+    <property name="integration.base.path" file="ant.properties" value="" />
 
      <!-- Change the paths to your individual installation directories -->
     <property name="checkstyle.home.dir" location="${integration.base.path}/checkstyle-6.13" />
