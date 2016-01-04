@@ -128,6 +128,17 @@
                destdir="${bin.dir}"
                includeantruntime="true"
                classpathref="run.classpath">
+        </javac>
+    </target>
+
+    <!-- -->
+    <target name="compile-test" depends="clean" description="Compile the entire project.">
+        <mkdir dir="${bin.dir}" />
+        <javac debug="true"
+               srcdir="${test.dir}"
+               destdir="${bin.dir}"
+               includeantruntime="true"
+               classpathref="run.classpath">
             <!--<classpath>
                 <path id="org.junit" location="${junit.home.dir}/junit-4.10.jar}" /> 
             </classpath>-->
@@ -136,7 +147,7 @@
 
     <!-- -->
     <target name="junit"
-            depends="clean, compile"
+            depends="clean, compile, compile-test"
             description="Run all junit test cases."
     >
         <mkdir dir="${report.temp.dir}" />
