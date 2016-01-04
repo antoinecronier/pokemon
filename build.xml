@@ -132,13 +132,19 @@
     </target>
 
     <!-- -->
-    <target name="compile-test" depends="clean" description="Compile the entire project.">
+    <target name="compile-test" description="Compile the entire project.">
         <mkdir dir="${bin.dir}" />
         <javac debug="true"
                srcdir="${test.dir}"
                destdir="${bin.dir}"
                includeantruntime="true"
                classpathref="run.classpath">
+            <classpath> 
+                <pathelement location="${bin.dir}"/> 
+                <fileset dir="libs">
+                    <include name="junit-4.10.jar"/>
+                </fileset>
+            </classpath>
             <!--<classpath>
                 <path id="org.junit" location="${junit.home.dir}/junit-4.10.jar}" /> 
             </classpath>-->
