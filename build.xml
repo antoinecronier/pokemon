@@ -140,7 +140,7 @@
     >
         <mkdir dir="${report.temp.dir}" />
 
-        <junit printsummary="yes" fork="yes" haltonfailure="no">
+        <junit printsummary="yes" haltonfailure="no">
             <classpath location="${bin.dir}" />
             <classpath> 
                 <pathelement path="${junit.home.dir}/junit-4.10.jar}"/> 
