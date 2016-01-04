@@ -29,7 +29,7 @@
 
     <path id="run.classpath">
         <pathelement path="${bin.dir}" />
-        <pathelement path="${basedir}/lib/junit-4.10.jar.jar" />
+        <pathelement path="${junit.home.dir}/junit-4.10.jar}"/>
     </path>
 
     <!-- -->
@@ -142,7 +142,6 @@
         <mkdir dir="${report.temp.dir}" />
 
         <junit printsummary="yes" fork="yes" haltonfailure="no">
-            <classpath location="${junit.home.dir}/junit-4.10.jar}"/>
             <classpath location="${bin.dir}" />
 
             <formatter type="plain" />
