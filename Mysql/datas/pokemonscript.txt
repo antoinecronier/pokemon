@@ -1,0 +1,458 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: typeDePokemons
+#------------------------------------------------------------
+
+CREATE TABLE typeDePokemons(
+        id_type_pokemons int (11) Auto_increment  NOT NULL ,
+        nom              Varchar (25) NOT NULL ,
+        attaque          Int ,
+        attaque_spe      Int ,
+        defence          Int ,
+        defence_spe      Int ,
+        vitesse          Int ,
+        pv               Int ,
+        PRIMARY KEY (id_type_pokemons )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: dresseurs
+#------------------------------------------------------------
+
+CREATE TABLE dresseurs(
+        id_dresseur int (11) Auto_increment  NOT NULL ,
+        nom         Varchar (25) NOT NULL ,
+        id_badges   Int ,
+        PRIMARY KEY (id_dresseur )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: types
+#------------------------------------------------------------
+
+CREATE TABLE types(
+        id_types int (11) Auto_increment  NOT NULL ,
+        nom      Varchar (25) NOT NULL ,
+        PRIMARY KEY (id_types )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: attaques
+#------------------------------------------------------------
+
+CREATE TABLE attaques(
+        id_attaques int (11) Auto_increment  NOT NULL ,
+        nom         Varchar (25) ,
+        puissance   Int ,
+        precis      Int ,
+        id_types    Int ,
+        PRIMARY KEY (id_attaques )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: zones
+#------------------------------------------------------------
+
+CREATE TABLE zones(
+        id_zones  int (11) Auto_increment  NOT NULL ,
+        nom       Varchar (25) NOT NULL ,
+        id_badges Int ,
+        PRIMARY KEY (id_zones )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: badges
+#------------------------------------------------------------
+
+CREATE TABLE badges(
+        id_badges   int (11) Auto_increment  NOT NULL ,
+        nom         Varchar (25) NOT NULL ,
+        id_dresseur_maitre Int ,
+        id_zones    Int ,
+        PRIMARY KEY (id_badges )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: positions
+#------------------------------------------------------------
+
+CREATE TABLE positions(
+        id_positions int (11) Auto_increment  NOT NULL ,
+        x            Int ,
+        y            Int ,
+        id_zones     Int ,
+        PRIMARY KEY (id_positions )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: pokemons
+#------------------------------------------------------------
+
+CREATE TABLE pokemons(
+        id_pokemons      Int NOT NULL ,
+        surnom           Varchar (25) NOT NULL ,
+        niveau           Int ,
+        capture          Date NOT NULL ,
+        id_dresseur      Int ,
+        id_attaques_1    Int ,
+        id_attaques_2    Int ,
+        id_attaques_3    Int ,
+        id_attaques_4    Int ,
+        id_type_pokemons Int ,
+        PRIMARY KEY (id_pokemons )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: gagne
+#------------------------------------------------------------
+
+CREATE TABLE gagne(
+        obtention   Date ,
+        id_dresseur Int NOT NULL ,
+        id_badges   Int NOT NULL ,
+        PRIMARY KEY (id_dresseur ,id_badges )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: vieDans
+#------------------------------------------------------------
+
+CREATE TABLE vieDans(
+        id_zones         Int NOT NULL ,
+        id_type_pokemons Int NOT NULL ,
+        PRIMARY KEY (id_zones ,id_type_pokemons )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: possedeLesTypes
+#------------------------------------------------------------
+
+CREATE TABLE possedeLesTypes(
+        id_type_pokemons Int NOT NULL ,
+        id_types         Int NOT NULL ,
+        PRIMARY KEY (id_type_pokemons ,id_types )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: fortContre
+#------------------------------------------------------------
+
+CREATE TABLE fortContre(
+        modificateur     Decimal (4,2) ,
+        id_types_base    Int NOT NULL ,
+        id_types_faible  Int NOT NULL ,
+        PRIMARY KEY (id_types_base ,id_types_faible )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: faibleContre
+#------------------------------------------------------------
+
+CREATE TABLE faibleContre(
+        modificateur Decimal (4,2) ,
+        id_types_base    Int NOT NULL ,
+        id_types_fort    Int NOT NULL ,
+        PRIMARY KEY (id_types_base ,id_types_fort )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: evolueEn
+#------------------------------------------------------------
+
+CREATE TABLE evolueEn(
+        id_type_pokemons                Int NOT NULL ,
+        id_type_pokemons_evolution      Int NOT NULL ,
+        PRIMARY KEY (id_type_pokemons ,id_type_pokemons_evolution )
+)ENGINE=InnoDB;
+
+ALTER TABLE pokemons ADD CONSTRAINT FK_pokemons_id_attaques_1 FOREIGN KEY (id_attaques_1) REFERENCES attaques(id_attaques);
+ALTER TABLE pokemons ADD CONSTRAINT FK_pokemons_id_attaques_2 FOREIGN KEY (id_attaques_2) REFERENCES attaques(id_attaques);
+ALTER TABLE pokemons ADD CONSTRAINT FK_pokemons_id_attaques_3 FOREIGN KEY (id_attaques_3) REFERENCES attaques(id_attaques);
+ALTER TABLE pokemons ADD CONSTRAINT FK_pokemons_id_attaques_4 FOREIGN KEY (id_attaques_4) REFERENCES attaques(id_attaques);
+ALTER TABLE dresseurs ADD CONSTRAINT FK_dresseurs_id_badges FOREIGN KEY (id_badges) REFERENCES badges(id_badges);
+ALTER TABLE attaques ADD CONSTRAINT FK_attaques_id_types FOREIGN KEY (id_types) REFERENCES types(id_types);
+ALTER TABLE zones ADD CONSTRAINT FK_zones_id_badges FOREIGN KEY (id_badges) REFERENCES badges(id_badges);
+ALTER TABLE badges ADD CONSTRAINT FK_badges_id_dresseur_maitre FOREIGN KEY (id_dresseur_maitre) REFERENCES dresseurs(id_dresseur);
+ALTER TABLE badges ADD CONSTRAINT FK_badges_id_zones FOREIGN KEY (id_zones) REFERENCES zones(id_zones);
+ALTER TABLE positions ADD CONSTRAINT FK_positions_id_zones FOREIGN KEY (id_zones) REFERENCES zones(id_zones);
+ALTER TABLE pokemons ADD CONSTRAINT FK_pokemons_id_dresseur FOREIGN KEY (id_dresseur) REFERENCES dresseurs(id_dresseur);
+ALTER TABLE pokemons ADD CONSTRAINT FK_pokemons_id_type_pokemons FOREIGN KEY (id_type_pokemons) REFERENCES typeDePokemons(id_type_pokemons);
+ALTER TABLE gagne ADD CONSTRAINT FK_gagne_id_dresseur FOREIGN KEY (id_dresseur) REFERENCES dresseurs(id_dresseur);
+ALTER TABLE gagne ADD CONSTRAINT FK_gagne_id_badges FOREIGN KEY (id_badges) REFERENCES badges(id_badges);
+ALTER TABLE vieDans ADD CONSTRAINT FK_vieDans_id_zones FOREIGN KEY (id_zones) REFERENCES zones(id_zones);
+ALTER TABLE vieDans ADD CONSTRAINT FK_vieDans_id_type_pokemons FOREIGN KEY (id_type_pokemons) REFERENCES typeDePokemons(id_type_pokemons);
+ALTER TABLE possedeLesTypes ADD CONSTRAINT FK_possedeLesTypes_id_type_pokemons FOREIGN KEY (id_type_pokemons) REFERENCES typeDePokemons(id_type_pokemons);
+ALTER TABLE possedeLesTypes ADD CONSTRAINT FK_possedeLesTypes_id_types FOREIGN KEY (id_types) REFERENCES types(id_types);
+ALTER TABLE fortContre ADD CONSTRAINT FK_fortContre_id_types_base FOREIGN KEY (id_types_base) REFERENCES types(id_types);
+ALTER TABLE fortContre ADD CONSTRAINT FK_fortContre_id_types_faible FOREIGN KEY (id_types_faible) REFERENCES types(id_types);
+ALTER TABLE faibleContre ADD CONSTRAINT FK_faibleContre_id_types FOREIGN KEY (id_types_base) REFERENCES types(id_types);
+ALTER TABLE faibleContre ADD CONSTRAINT FK_faibleContre_id_types_1 FOREIGN KEY (id_types_fort) REFERENCES types(id_types);
+ALTER TABLE evolueEn ADD CONSTRAINT FK_evolueEn_id_type_pokemons FOREIGN KEY (id_type_pokemons) REFERENCES typeDePokemons(id_type_pokemons);
+ALTER TABLE evolueEn ADD CONSTRAINT FK_evolueEn_id_type_pokemons_evolution FOREIGN KEY (id_type_pokemons_evolution) REFERENCES typeDePokemons(id_type_pokemons);
+
+INSERT INTO types VALUES
+(1,'acier'),
+(2,'combat'),
+(3,'dragon'),
+(4,'eau'),
+(5,'electrik'),
+(6,'feu'),
+(7,'galce'),
+(8,'insecte'),
+(9,'normal'),
+(10,'plante'),
+(11,'poison'),
+(12,'psy'),
+(13,'roche'),
+(14,'sol'),
+(15,'spectre'),
+(16,'tenebres'),
+(17,'vol');
+
+INSERT INTO fortcontre VALUES
+(1.5,1,7),
+(1.5,1,13),
+(1.5,2,9),
+(1.5,2,13),
+(1.5,2,7),
+(1.5,2,1),
+(1.5,2,16),
+(1.5,3,3),
+(1.5,4,6),
+(1.5,4,13),
+(1.5,4,14),
+(1.5,5,4),
+(1.5,5,17),
+(1.5,6,10),
+(1.5,6,1),
+(1.5,6,8),
+(1.5,6,7),
+(1.5,7,14),
+(1.5,7,17),
+(1.5,7,10),
+(1.5,7,3),
+(1.5,8,10),
+(1.5,8,12),
+(1.5,8,16),
+(1.5,10,4),
+(1.5,10,13),
+(1.5,10,14),
+(1.5,11,10),
+(1.5,12,2),
+(1.5,12,11),
+(1.5,13,6),
+(1.5,13,17),
+(1.5,13,7),
+(1.5,13,8),
+(1.5,14,5),
+(1.5,14,1),
+(1.5,14,11),
+(1.5,14,6),
+(1.5,14,13),
+(1.5,15,15),
+(1.5,15,12),
+(1.5,16,12),
+(1.5,16,15),
+(1.5,17,10),
+(1.5,17,2),
+(1.5,17,8);
+
+INSERT INTO faiblecontre VALUES
+(0.5,17,7),
+(0.5,17,5),
+(0.5,17,13),
+(0.5,16,2),
+(0.5,16,8),
+(0.5,15,15),
+(0.5,14,7),
+(0.5,14,4),
+(0.5,14,10),
+(0.5,13,4),
+(0.5,13,10),
+(0.5,13,14),
+(0.5,13,2),
+(0.5,13,1),
+(0.5,12,8),
+(0.5,12,15),
+(0.5,12,16),
+(0.5,11,14),
+(0.5,11,12),
+(0.5,10,7),
+(0.5,10,6),
+(0.5,10,17),
+(0.5,10,8),
+(0.5,10,11),
+(0.5,9,2),
+(0.5,8,6),
+(0.5,8,13),
+(0.5,8,17),
+(0.5,7,6),
+(0.5,7,13),
+(0.5,7,1),
+(0.5,7,2),
+(0.5,6,4),
+(0.5,6,14),
+(0.5,6,13),
+(0.5,5,14),
+(0.5,4,5),
+(0.5,4,10),
+(0.5,3,7),
+(0.5,3,3),
+(0.5,2,17),
+(0.5,2,12),
+(0.5,1,14),
+(0.5,1,6),
+(0.5,1,2);
+
+INSERT INTO attaques VALUES
+(1,'Corps Perdu',70,100,2),
+(2,"Cord'Boue",20,100,14),
+(3,"Coud'Krane",100,100,9),
+(4,'Coup Bas',80,100,16),
+(5,'Croc De Mort',80,90,9),
+(6,'Danse du Feu',80,100,6),
+(7,'Danse-Fleur',120,100,10),
+(8,'Danseflamme',15,70,6),
+(9,'Deflagration',120,85,6),
+(10,'Detritus',65,100,11),
+(11,'Devoreve',100,100,12),
+(12,'Double Pied',30,100,2),
+(13,'Double-Dard',25,100,8),
+(14,'Draco-Queue',60,90,3),
+(15,'Dracogriffe',80,100,3),
+(16,'Dracosouffle',60,100,3),
+(17,'Eclair',40,100,5),
+(18,'Elecanon',120,50,5),
+(19,'Etincelle',65,100,5),
+(20,'Explosion',250,100,9),
+(21,'Fatal-Foudre',120,70,5),
+(22,'Force',80,100,9),
+(23,'Griffe Acier',50,95,1),
+(24,'Griffe Ombre',70,100,16),
+(25,'Hydrocanon',120,80,4),
+(26,"Lame d'Air",75,95,17),
+(27,'Lame-Feuille',90,100,10),
+(28,'Lance-Flamme',95,100,6),
+(29,'Lance-Soleil',120,100,10),
+(30,'Laser Glace',95,100,7),
+(31,'Lechouille',20,100,15),
+(32,'Lutte',50,100,null),
+(33,'Mach Punch',40,100,2),
+(34,'Machouille',80,100,16),
+(35,'Mania',90,100,9),
+(36,"Massd'Os",65,85,14),
+(37,'Megacorne',120,85,8),
+(38,'Morsure',60,100,16),
+(39,'Onde Boreale',65,100,7),
+(40,'Picpic',35,100,17),
+(41,'Pince-Masse',90,85,4),
+(42,'Pouv.Antique',60,100,13),
+(43,'Psyko',90,100,12),
+(44,'Punition',1,100,16),
+(45,'Stalagtite',10,100,7),
+(46,'Taillade',10,95,8);
+
+INSERT INTO typedepokemons VALUES
+(1,'Pikachu',55,50,30,40,90,35),
+(2,'Chétiflor',75,70,35,30,40,50),
+(3,'Boustiflor',90,85,50,45,55,65),
+(4,'Empiflor',105,100,65,60,70,80),
+(5,'Raichu',90,90,55,80,100,60),
+(6,'Sulfura',100,125,90,85,90,90),
+(7,'Mewtwo',110,154,90,90,130,106)
+;
+
+INSERT INTO possedelestypes VALUES
+(1,5),
+(2,10),
+(2,11),
+(3,10),
+(3,11),
+(4,10),
+(4,11),
+(5,5),
+(6,6),
+(6,17),
+(7,12)
+;
+
+INSERT INTO evolueen VALUES
+(2,3),
+(3,4),
+(1,5)
+;
+
+INSERT INTO pokemons VALUES
+(1,'Pikachu',10,'2015-11-19',null,17,18,19,29,1),
+(2,'Sulfura',15,'2015-11-19',null,28,40,26,6,6)
+;
+
+#------------------------------------------------------------
+# Parti élève
+#------------------------------------------------------------
+
+INSERT INTO badges VALUES
+(1,'foudre',null,null),
+(2,'roche',null,null)
+;
+
+INSERT INTO dresseurs VALUES
+(1,'red',null),
+(2,'blue',null),
+(3,'yellow',null),
+(4,'purple',null),
+(5,'white',null),
+(6,'rené',null)
+;
+
+UPDATE badges
+SET id_dresseur_maitre = 1
+WHERE badges.id_badges = 1
+;
+
+UPDATE badges
+SET id_dresseur_maitre = 3
+WHERE badges.id_badges = 2
+;
+
+INSERT INTO gagne VALUES
+('2015-11-19',6,1),
+('2015-11-19',6,2)
+;
+
+UPDATE pokemons
+SET id_dresseur = 6
+WHERE pokemons.id_pokemons IN(1,2)
+;
+
+SELECT dresseurs.nom, pokemons.surnom, pokemons.capture FROM dresseurs INNER JOIN pokemons ON dresseurs.id_dresseur = pokemons.id_pokemons;
+
+SELECT badges.nom, dresseurs.nom FROM badges INNER JOIN dresseurs ON badges.id_dresseur_maitre = dresseurs.id_dresseur;
+
+SELECT * FROM types WHERE id_types IN (SELECT id_types_faible FROM fortcontre INNER JOIN types ON fortcontre.id_types_base = types.id_types INNER JOIN attaques ON types.id_types = attaques.id_types WHERE attaques.nom = 'Picpic');
+
+SELECT pokemons.surnom, pokemons.niveau, attaques.nom, attaques.puissance, attaques.precis FROM pokemons INNER JOIN attaques ON pokemons.id_attaques_1 = attaques.id_attaques WHERE pokemons.surnom = 'Pikachu' UNION SELECT '', '', attaques.nom, attaques.puissance, attaques.precis FROM pokemons INNER JOIN attaques ON pokemons.id_attaques_2 = attaques.id_attaques WHERE pokemons.surnom = 'Pikachu' UNION SELECT '', '', attaques.nom, attaques.puissance, attaques.precis FROM pokemons INNER JOIN attaques ON pokemons.id_attaques_3 = attaques.id_attaques WHERE pokemons.surnom = 'Pikachu' UNION SELECT '', '', attaques.nom, attaques.puissance, attaques.precis FROM pokemons INNER JOIN attaques ON pokemons.id_attaques_4 = attaques.id_attaques WHERE pokemons.surnom = 'Pikachu';
+
+SELECT attaques.nom, attaques.puissance, attaques.precis FROM attaques  ORDER BY puissance DESC, precis DESC LIMIT 5;
+
+SELECT attaques.nom, attaques.puissance, attaques.precis, types.nom FROM attaques INNER JOIN types ON attaques.id_types = types.id_types ORDER BY puissance DESC, precis DESC LIMIT 5;
+
+
+
