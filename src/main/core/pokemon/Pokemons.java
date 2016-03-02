@@ -8,6 +8,7 @@ public class Pokemons {
 	private String surnom;
 	private int niveau;
 	private Date capture;
+	private int id_dresseurs;
 	private ArrayList<Attaques> attaques;
 	private TypeDePokemons typeDePokemon;
 
@@ -22,6 +23,14 @@ public class Pokemons {
 	public Pokemons() {
 	}
 	
+	public int getId_dresseurs() {
+		return id_dresseurs;
+	}
+
+	public void setId_dresseurs(int id_dresseurs) {
+		this.id_dresseurs = id_dresseurs;
+	}
+
 	public int getId_pokemons() {
 		return id_pokemons;
 	}

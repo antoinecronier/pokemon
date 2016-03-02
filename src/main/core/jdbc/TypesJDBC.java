@@ -114,4 +114,22 @@ public class TypesJDBC extends BaseJDBC implements TypesDAO {
            ArrayList<Types> returnTypes = new ArrayList<Types>(types);
            return returnTypes;
 	}
+
+	@Override
+	public void Insert(ArrayList<Types> types) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(ArrayList<Types> types) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(ArrayList<Types> types) {
+		// TODO Auto-generated method stub
+		
+	}
 }

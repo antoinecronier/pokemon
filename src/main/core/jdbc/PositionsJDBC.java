@@ -19,4 +19,22 @@ public class PositionsJDBC extends BaseJDBC implements PositionsDAO {
 		return null;
 	}
 
+	@Override
+	public void Insert(ArrayList<Positions> positions) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(ArrayList<Positions> positions) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(ArrayList<Positions> positions) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

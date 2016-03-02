@@ -48,4 +48,10 @@ public class Attaques {
 	public void setType(Types type) {
 		this.type = type;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.getNom() + " " + this.getPuissance() + " " + this.getPrecision() + " | " + ((this.getType() != null) ? this.getType().toString() : "N/A")  ;
+	}
 }

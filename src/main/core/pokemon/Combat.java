@@ -3,6 +3,7 @@ package main.core.pokemon;
 import java.util.ArrayList;
 
 import main.core.jdbc.AttaquesJDBC;
+import main.core.jdbc.DresseursJDBC;
 import main.core.jdbc.TypeDePokemonsJDBC;
 import main.core.jdbc.TypesJDBC;
 
@@ -19,9 +20,15 @@ public class Combat {
         
         AttaquesJDBC attaquesJDBC = new AttaquesJDBC();
         ArrayList<Attaques> attaques = attaquesJDBC.Select();
+        for (Attaques attaque : attaques) {
+			System.out.println(attaque.toString());
+		}
         
         TypeDePokemonsJDBC typeDePokemonsJDBC = new TypeDePokemonsJDBC();
         ArrayList<TypeDePokemons> typeDePokemons = typeDePokemonsJDBC.Select();
+        for (TypeDePokemons typeDePokemon : typeDePokemons) {
+        	System.out.println(typeDePokemon.toString());
+		}
         
         Types type = typesJDBC.Select(4);
         
@@ -37,7 +44,17 @@ public class Combat {
 				System.out.println("    " + types3.getNom());	
 			}
 		}
-        typesJDBC.CloseConnection();
+        
+        DresseursJDBC dresseursJDBC = new DresseursJDBC();
+        ArrayList<Dresseurs> dresseurs = dresseursJDBC.Select();
+        for (Dresseurs dresseur : dresseurs) {
+        	System.out.println(dresseur.toString());
+		}
+        
+        dresseurs = dresseursJDBC.SelectWithPokemons();
+        for (Dresseurs dresseur : dresseurs) {
+        	System.out.println(dresseur.toString());
+		}
     }
 
 	private static void Introduction() {

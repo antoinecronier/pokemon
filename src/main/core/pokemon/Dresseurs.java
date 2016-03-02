@@ -18,6 +18,8 @@ public class Dresseurs {
 	}
 	
 	public Dresseurs() {
+		this.badges = new ArrayList<Badges>();
+		this.pokemons = new ArrayList<Pokemons>();
 	}
 
 	public int getId_dresseur() {
@@ -60,5 +62,12 @@ public class Dresseurs {
 		this.position = position;
 	}
 	
-	
+	@Override
+	public String toString() {
+		String pokemons = new String();
+		for (Pokemons pokemon : this.pokemons) {
+			pokemons = pokemons + " " + pokemon.getSurnom();
+		}
+		return this.nom +" "+ pokemons;
+	}
 }

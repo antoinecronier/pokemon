@@ -80,4 +80,22 @@ public class TypeDePokemonsJDBC extends BaseJDBC implements TypeDePokemonsDAO {
 		return null;
 	}
 
+	@Override
+	public void Insert(ArrayList<TypeDePokemons> typeDePokemons) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(ArrayList<TypeDePokemons> typeDePokemons) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(ArrayList<TypeDePokemons> typeDePokemons) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

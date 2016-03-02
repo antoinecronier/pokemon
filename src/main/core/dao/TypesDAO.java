@@ -2,6 +2,7 @@ package main.core.dao;
 
 import java.util.ArrayList;
 
+import main.core.pokemon.TypeDePokemons;
 import main.core.pokemon.Types;
 
 public interface TypesDAO {
@@ -17,4 +18,8 @@ public interface TypesDAO {
 	 * @return
 	 */
 	public Types Select(Integer id_type);
+	
+	public void Insert(ArrayList<Types> types);
+	public void Delete(ArrayList<Types> types);
+	public void Update(ArrayList<Types> types);
 }

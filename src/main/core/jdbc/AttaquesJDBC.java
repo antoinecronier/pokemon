@@ -72,4 +72,22 @@ public class AttaquesJDBC extends BaseJDBC implements AttaquesDAO{
            return attaque;
 	}
 
+	@Override
+	public void Insert(ArrayList<Attaques> attaques) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(ArrayList<Attaques> attaques) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(ArrayList<Attaques> attaques) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

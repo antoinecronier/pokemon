@@ -83,4 +83,10 @@ public class TypeDePokemons {
 	public void setEstDeType(ArrayList<Types> estDeType) {
 		this.estDeType = estDeType;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.getNom() + " " + this.getAttaque() + " " + this.getAttaque_spe() + " " + this.getDefence() + " " + this.getDefence_spe() + " " + this.getPv() + " " + this.getVitesse() ;
+	}
 }
