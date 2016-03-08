@@ -11,13 +11,13 @@ import main.core.pokemon.TypeDePokemons;
 import main.core.pokemon.Types;
 import main.core.dao.TypeDePokemonsDAO;
 
-public class TypeDePokemonsJDBC extends BaseJDBC implements TypeDePokemonsDAO {
+public class TypeDePokemonsJDBC implements TypeDePokemonsDAO {
 
 	@Override
 	public ArrayList<TypeDePokemons> Select() {
 		List<TypeDePokemons> typeDePokemons = new LinkedList<TypeDePokemons>();
 		try {
-			Statement statement = super.EstablishConnection().createStatement();
+			Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
 			ResultSet resultSet = statement
 					.executeQuery("SELECT * FROM pokemon.typedepokemons");
 
@@ -58,7 +58,7 @@ public class TypeDePokemonsJDBC extends BaseJDBC implements TypeDePokemonsDAO {
 		ArrayList<Types> typesToReturn = new ArrayList<Types>();
 
 		try {
-			Statement statement = super.EstablishConnection().createStatement();
+			Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
 			ResultSet resultSet = statement
 					.executeQuery("SELECT * FROM pokemon.possedelestypes "
 							+ "WHERE pokemon.possedelestypes.id_type_pokemons = "
@@ -80,7 +80,7 @@ public class TypeDePokemonsJDBC extends BaseJDBC implements TypeDePokemonsDAO {
 	public TypeDePokemons Select(Integer id_type_de_pokemon) {
 		TypeDePokemons typeDePokemon = null;
 		try {
-			Statement statement = super.EstablishConnection().createStatement();
+			Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
 			ResultSet resultSet = statement
 					.executeQuery("SELECT * FROM pokemon.typedepokemons WHERE pokemon.typedepokemons.id_type_pokemons = "
 							+ id_type_de_pokemon);

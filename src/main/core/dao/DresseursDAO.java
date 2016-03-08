@@ -12,8 +12,9 @@ public interface DresseursDAO {
 	public Dresseurs Select(Integer id_dresseur);
 	public Dresseurs SelectWithPokemons(Integer id_dresseur);
 	
-	public void Insert(ArrayList<Dresseurs> dresseurs);
+	public ArrayList<Dresseurs> Insert(ArrayList<Dresseurs> dresseurs);
 	public void Delete(ArrayList<Dresseurs> dresseurs);
 	public void Update(ArrayList<Dresseurs> dresseurs);
 	
+	public void InsertWhitPokemons(ArrayList<Dresseurs> dresseurs);
 }

@@ -7,6 +7,22 @@ import java.sql.SQLException;
 import main.core.dao.BaseDAO;
 
 public class BaseJDBC implements BaseDAO{
+	/** Constructeur privé */
+	private BaseJDBC()
+	{}
+ 
+	/** Instance unique non préinitialisée */
+	private static BaseJDBC INSTANCE = null;
+ 
+	/** Point d'accès pour l'instance unique du singleton */
+	public static BaseJDBC getInstance()
+	{			
+		if (INSTANCE == null)
+		{ 	INSTANCE = new BaseJDBC();	
+		}
+		return INSTANCE;
+	}
+	
 	private Connection connection = null;
 
 	@Override

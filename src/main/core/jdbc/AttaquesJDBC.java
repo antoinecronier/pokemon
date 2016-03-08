@@ -10,13 +10,13 @@ import java.util.List;
 import main.core.pokemon.Attaques;
 import main.core.dao.AttaquesDAO;
 
-public class AttaquesJDBC extends BaseJDBC implements AttaquesDAO{
+public class AttaquesJDBC implements AttaquesDAO{
 
 	@Override
 	public ArrayList<Attaques> Select() {
 		List<Attaques> attaques = new LinkedList<Attaques>();
         try {
-               Statement statement = super.EstablishConnection().createStatement();
+               Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.attaques");
                 
                Attaques attaque = null;
@@ -47,7 +47,7 @@ public class AttaquesJDBC extends BaseJDBC implements AttaquesDAO{
 	public Attaques Select(Integer id_attaque) {
 		Attaques attaque = null;
         try {
-               Statement statement = super.EstablishConnection().createStatement();
+               Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.attaques "
                		+ "WHERE pokemon.attaques.id_attaques = " + id_attaque);
                 

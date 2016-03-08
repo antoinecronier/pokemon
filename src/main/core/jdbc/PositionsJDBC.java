@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import main.core.pokemon.Positions;
 import main.core.dao.PositionsDAO;
 
-public class PositionsJDBC extends BaseJDBC implements PositionsDAO {
+public class PositionsJDBC implements PositionsDAO {
 
 	@Override
 	public ArrayList<Positions> Select() {

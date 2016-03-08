@@ -12,13 +12,13 @@ import java.util.List;
 import main.core.pokemon.Types;
 import main.core.dao.TypesDAO;
 
-public class TypesJDBC extends BaseJDBC implements TypesDAO {
+public class TypesJDBC implements TypesDAO {
 
 	@Override
 	public Types Select(Integer id_type) {
 		Types type = null;
 		try {
-			Statement statement = super.EstablishConnection().createStatement();
+			Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
 			ResultSet resultSet = statement
 					.executeQuery("SELECT * FROM pokemon.types WHERE pokemon.types.id_types = " + id_type);
 
@@ -43,7 +43,7 @@ public class TypesJDBC extends BaseJDBC implements TypesDAO {
 	public ArrayList<Types> Select() {
 		List<Types> types = new LinkedList<Types>();
         try {
-               Statement statement = super.EstablishConnection().createStatement();
+               Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.types");
                 
                Types type = null;
@@ -68,7 +68,7 @@ public class TypesJDBC extends BaseJDBC implements TypesDAO {
 	public ArrayList<Types> SelectFort(int id) {
 		List<Types> types = new LinkedList<Types>();
         try {
-               Statement statement = super.EstablishConnection().createStatement();
+               Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.fortcontre "
                		+ "INNER JOIN pokemon.types ON pokemon.fortcontre.id_types_faible = pokemon.types.id_types "
                		+ "WHERE pokemon.fortcontre.id_types_base = " + id);
@@ -93,7 +93,7 @@ public class TypesJDBC extends BaseJDBC implements TypesDAO {
 	public ArrayList<Types> SelectFaible(int id) {
 		List<Types> types = new LinkedList<Types>();
         try {
-               Statement statement = super.EstablishConnection().createStatement();
+               Statement statement = BaseJDBC.getInstance().EstablishConnection().createStatement();
                ResultSet resultSet = statement.executeQuery("SELECT * FROM pokemon.faiblecontre "
                		+ "INNER JOIN pokemon.types ON pokemon.faiblecontre.id_types_fort = pokemon.types.id_types "
                		+ "WHERE pokemon.faiblecontre.id_types_base = " + id);
