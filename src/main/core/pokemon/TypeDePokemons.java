@@ -86,7 +86,10 @@ public class TypeDePokemons {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return this.getNom() + " " + this.getAttaque() + " " + this.getAttaque_spe() + " " + this.getDefence() + " " + this.getDefence_spe() + " " + this.getPv() + " " + this.getVitesse() ;
+		String result = "";
+		for (Types type : this.getEstDeType()) {
+			result += "\n        -" + type.toString();
+		}
+		return "Nom : "+this.getNom() + "\n    Attaque => " + this.getAttaque() + "\n    AttaqueSpe => " + this.getAttaque_spe() + " \n    Defence => " + this.getDefence() + "\n    DefenceSpe => " + this.getDefence_spe() + "\n    PV => " + this.getPv() + "\n    Vitesse => " + this.getVitesse() +"\n    Types : " + result ;
 	}
 }

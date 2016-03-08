@@ -52,6 +52,6 @@ public class Attaques {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.getNom() + " " + this.getPuissance() + " " + this.getPrecision() + " | " + ((this.getType() != null) ? this.getType().toString() : "N/A")  ;
+		return "Attaque : " + this.getNom() + "\n        Puissance : " + this.getPuissance() + "\n        Precision : " + this.getPrecision() + "\n        Type : " + ((this.getType() != null) ? this.getType().toString() : "N/A")  ;
 	}
 }

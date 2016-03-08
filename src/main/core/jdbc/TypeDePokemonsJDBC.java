@@ -56,14 +56,16 @@ public class TypeDePokemonsJDBC extends BaseJDBC implements TypeDePokemonsDAO {
 	private ArrayList<Types> EstDeType(int id_type_pokemons) {
 		TypesJDBC typesJDBC = new TypesJDBC();
 		ArrayList<Types> typesToReturn = new ArrayList<Types>();
-		
+
 		try {
 			Statement statement = super.EstablishConnection().createStatement();
 			ResultSet resultSet = statement
 					.executeQuery("SELECT * FROM pokemon.possedelestypes "
-							+ "WHERE pokemon.possedelestypes.id_type_pokemons = " + id_type_pokemons);
+							+ "WHERE pokemon.possedelestypes.id_type_pokemons = "
+							+ id_type_pokemons);
 			while (resultSet.next()) {
-				typesToReturn.add(typesJDBC.Select(Integer.parseInt(resultSet.getString("id_types"))));
+				typesToReturn.add(typesJDBC.Select(Integer.parseInt(resultSet
+						.getString("id_types"))));
 			}
 			resultSet.close();
 			statement.close();
@@ -76,26 +78,60 @@ public class TypeDePokemonsJDBC extends BaseJDBC implements TypeDePokemonsDAO {
 
 	@Override
 	public TypeDePokemons Select(Integer id_type_de_pokemon) {
-		// TODO Auto-generated method stub
-		return null;
+		TypeDePokemons typeDePokemon = null;
+		try {
+			Statement statement = super.EstablishConnection().createStatement();
+			ResultSet resultSet = statement
+					.executeQuery("SELECT * FROM pokemon.typedepokemons WHERE pokemon.typedepokemons.id_type_pokemons = "
+							+ id_type_de_pokemon);
+
+			while (resultSet.next()) {
+				typeDePokemon = new TypeDePokemons();
+				typeDePokemon.setId_type_pokemons(Integer.parseInt(resultSet
+						.getString("id_type_pokemons")));
+				typeDePokemon.setNom(resultSet.getString("nom"));
+				typeDePokemon.setAttaque(Integer.parseInt(resultSet
+						.getString("attaque")));
+				typeDePokemon.setAttaque_spe(Integer.parseInt(resultSet
+						.getString("attaque_spe")));
+				typeDePokemon.setDefence(Integer.parseInt(resultSet
+						.getString("defence")));
+				typeDePokemon.setDefence_spe(Integer.parseInt(resultSet
+						.getString("defence_spe")));
+				typeDePokemon.setEstDeType(EstDeType(typeDePokemon
+						.getId_type_pokemons()));
+				typeDePokemon
+						.setPv(Integer.parseInt(resultSet.getString("pv")));
+				typeDePokemon.setVitesse(Integer.parseInt(resultSet
+						.getString("vitesse")));
+			}
+			resultSet.close();
+			statement.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		typeDePokemon.setEstDeType(this.EstDeType(typeDePokemon.getId_type_pokemons()));
+
+		return typeDePokemon;
 	}
 
 	@Override
 	public void Insert(ArrayList<TypeDePokemons> typeDePokemons) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void Delete(ArrayList<TypeDePokemons> typeDePokemons) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void Update(ArrayList<TypeDePokemons> typeDePokemons) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

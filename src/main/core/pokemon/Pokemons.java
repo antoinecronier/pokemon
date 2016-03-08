@@ -9,6 +9,7 @@ public class Pokemons {
 	private int niveau;
 	private Date capture;
 	private int id_dresseurs;
+	private int id_type_de_pokemon;
 	private ArrayList<Attaques> attaques;
 	private TypeDePokemons typeDePokemon;
 
@@ -23,6 +24,14 @@ public class Pokemons {
 	public Pokemons() {
 	}
 	
+	public int getId_type_de_pokemon() {
+		return id_type_de_pokemon;
+	}
+
+	public void setId_type_de_pokemon(int id_type_de_pokemon) {
+		this.id_type_de_pokemon = id_type_de_pokemon;
+	}
+
 	public int getId_dresseurs() {
 		return id_dresseurs;
 	}
@@ -68,5 +77,15 @@ public class Pokemons {
 	}
 	public void setTypeDePokemon(TypeDePokemons typeDePokemon) {
 		this.typeDePokemon = typeDePokemon;
+	}
+	
+	@Override
+	public String toString() {
+		String result;
+		result = this.getSurnom() + " niveau : " + this.getNiveau() + " \n    Type : " + this.getTypeDePokemon().toString() +"\n";
+		for (Attaques attaque : this.getAttaques()) {
+			result += "\n        " + attaque.toString() +"\n";
+		}
+		return result;
 	}
 }

@@ -34,8 +34,11 @@ public class PokemonsJDBC extends BaseJDBC implements PokemonsDAO {
 				pokemon.setNiveau(Integer.parseInt(resultSet
 						.getString("niveau")));
 				pokemon.setId_dresseurs(resultSet.getInt("id_dresseur"));
+				pokemon.setId_type_de_pokemon(resultSet.getInt("id_type_pokemons"));
 				
-				// pokemon.setTypeDePokemon(SelectTypeDePokemon(pokemon.getId_pokemons()));
+				TypeDePokemonsJDBC selectTypeDePokemonsJDBC = new TypeDePokemonsJDBC();
+				pokemon.setTypeDePokemon(selectTypeDePokemonsJDBC.Select(pokemon.getId_type_de_pokemon()));
+				
 				ArrayList<Attaques> attaques = new ArrayList<Attaques>();
 				AttaquesJDBC selectAttaques = new AttaquesJDBC();
 				attaques.add(selectAttaques.Select(Integer.parseInt(resultSet

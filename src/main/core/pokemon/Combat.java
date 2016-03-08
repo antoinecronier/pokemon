@@ -14,36 +14,36 @@ public class Combat {
 	public static void main(String[] args) {
         Introduction();
         
-        /* Testing */
-        TypesJDBC typesJDBC = new TypesJDBC();
-        typesJDBC.EstablishConnection();
-        
-        AttaquesJDBC attaquesJDBC = new AttaquesJDBC();
-        ArrayList<Attaques> attaques = attaquesJDBC.Select();
-        for (Attaques attaque : attaques) {
-			System.out.println(attaque.toString());
-		}
-        
-        TypeDePokemonsJDBC typeDePokemonsJDBC = new TypeDePokemonsJDBC();
-        ArrayList<TypeDePokemons> typeDePokemons = typeDePokemonsJDBC.Select();
-        for (TypeDePokemons typeDePokemon : typeDePokemons) {
-        	System.out.println(typeDePokemon.toString());
-		}
-        
-        Types type = typesJDBC.Select(4);
-        
-        ArrayList<Types> types = typesJDBC.Select();
-        for (Types types2 : types) {
-			System.out.println(types2.getNom());
-			System.out.println("  Fort contre :");
-			for (Types types3 : types2.getFortContre()) {
-				System.out.println("    " + types3.getNom());	
-			}
-			System.out.println("  Faible contre :");
-			for (Types types3 : types2.getFaibleContre()) {
-				System.out.println("    " + types3.getNom());	
-			}
-		}
+//        /* Testing */
+//        TypesJDBC typesJDBC = new TypesJDBC();
+//        typesJDBC.EstablishConnection();
+//        
+//        AttaquesJDBC attaquesJDBC = new AttaquesJDBC();
+//        ArrayList<Attaques> attaques = attaquesJDBC.Select();
+//        for (Attaques attaque : attaques) {
+//			System.out.println(attaque.toString());
+//		}
+//        
+//        TypeDePokemonsJDBC typeDePokemonsJDBC = new TypeDePokemonsJDBC();
+//        ArrayList<TypeDePokemons> typeDePokemons = typeDePokemonsJDBC.Select();
+//        for (TypeDePokemons typeDePokemon : typeDePokemons) {
+//        	System.out.println(typeDePokemon.toString());
+//		}
+//        
+//        Types type = typesJDBC.Select(4);
+//        
+//        ArrayList<Types> types = typesJDBC.Select();
+//        for (Types types2 : types) {
+//			System.out.println(types2.getNom());
+//			System.out.println("  Fort contre :");
+//			for (Types types3 : types2.getFortContre()) {
+//				System.out.println("    " + types3.getNom());	
+//			}
+//			System.out.println("  Faible contre :");
+//			for (Types types3 : types2.getFaibleContre()) {
+//				System.out.println("    " + types3.getNom());	
+//			}
+//		}
         
         DresseursJDBC dresseursJDBC = new DresseursJDBC();
         ArrayList<Dresseurs> dresseurs = dresseursJDBC.Select();

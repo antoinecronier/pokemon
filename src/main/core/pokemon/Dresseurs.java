@@ -66,8 +66,8 @@ public class Dresseurs {
 	public String toString() {
 		String pokemons = new String();
 		for (Pokemons pokemon : this.pokemons) {
-			pokemons = pokemons + " " + pokemon.getSurnom();
+			pokemons += "\n    " + pokemon.toString();
 		}
-		return this.nom +" "+ pokemons;
+		return "Dresseur : "+this.nom +" pokemons :\n "+ pokemons;
 	}
 }
