@@ -1,7 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'jacoco'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 version = '1.0'
 jar {
     manifest {
@@ -16,6 +17,7 @@ repositories {
 
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    compile 'mysql:mysql-connector-java:5.1.37'
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
@@ -41,31 +43,16 @@ uploadArchives {
     }
 }
 
-task jacocoTestReport(type:JacocoReport) {
-    group = "Reporting"
-    description = "Generate Jacoco coverage reports"
-
-    classDirectories = fileTree(
-            dir: "${buildDir}/intermediates/classes/debug",
-            excludes: ['**/R.class',
-                       '**/R$*.class',
-                       '**/*$ViewInjector*.*',
-                       '**/BuildConfig.*',
-                       '**/Manifest*.*']
-    )
-
-    sourceDirectories = files("${buildDir.parent}/src")
-    additionalSourceDirs = files([
-            "${buildDir}/generated/source/buildConfig/debug",
-            "${buildDir}/generated/source/r/debug"
-    ])
-    executionData = files("${buildDir}/jacoco/testDebug.exec")
-
-    reports {
-        xml.enabled = true
-        html.enabled = true
-    }
-}
+//task connectToDb << {
+//    def props = [user: 'user', password: 'password', allowMultiQueries: 'true'] as Properties
+//    def url = 'jdbc:mysql://mysqlhost:3306/db'
+//    def driver = 'com.mysql.jdbc.Driver'
+//    def sql = Sql.newInstance(url, props, driver)
+//
+//    sql.eachRow('show tables') { row ->
+//        println row[0]
+//    }
+//}
 
 /**
  * Checkstyle tasks
@@ -165,24 +152,25 @@ gradle.taskGraph.afterTask {Task task, TaskState state ->
  */
 
 
-apply plugin: 'findbugs'
+//apply plugin: 'findbugs'
 
-task findbugsMain (type: FindBugs, overwrite: true) {
-
-    description 'Run findbugs'
-    ignoreFailures = true
-    classes = fileTree('build/classes/main/main/')
-    source = fileTree('src/main/')
-    classpath = files(project.configurations.compile.asPath)
-
-    effort = 'max'
-
-    reports {
-        xml.enabled = true
-        html.enabled = false
-    }
-}
-
+//task findbugsMain (type: FindBugs, overwrite: true) {
+//
+//    description 'Run findbugs'
+//    ignoreFailures = true
+//    classes = fileTree('build/classes/main/main/')
+//    source = fileTree('src/main/')
+//    classpath = files(project.configurations.compile.asPath)
+//
+//    effort = 'max'
+//
+//    excludeFilter = file("/findbugsExclude.xml")
+//
+//    reports {
+//        xml.enabled = true
+//        html.enabled = false
+//    }
+//}
 
 /**
  * PMD task

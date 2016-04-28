@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.1.1" timestamp="2016-01-04T17:24:04.555">
+<pmd version="5.1.1" timestamp="2016-04-28T12:06:12.120">
 <file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\AttaquesJDBC.java">
 <violation beginline="32" endline="33" begincolumn="35" endcolumn="33" rule="EmptyCatchBlock" ruleset="Empty Code" package="main.core.jdbc" class="AttaquesJDBC" method="Select" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyCatchBlock" priority="3">
 Avoid empty catch blocks
@@ -9,10 +9,21 @@ Avoid empty catch blocks
 </violation>
 </file>
 <file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\BaseJDBC.java">
-<violation beginline="16" endline="18" begincolumn="25" endcolumn="117" rule="IfStmtsMustUseBraces" ruleset="Braces" package="main.core.jdbc" class="BaseJDBC" method="EstablishConnection" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+<violation beginline="32" endline="34" begincolumn="25" endcolumn="117" rule="IfStmtsMustUseBraces" ruleset="Braces" package="main.core.jdbc" class="BaseJDBC" method="EstablishConnection" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
 Avoid using if statements without curly braces
 </violation>
-<violation beginline="38" endline="40" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="main.core.jdbc" class="BaseJDBC" method="CloseConnection" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyCatchBlock" priority="3">
+<violation beginline="54" endline="56" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="main.core.jdbc" class="BaseJDBC" method="CloseConnection" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\jdbc\DresseursJDBC.java">
+<violation beginline="30" endline="30" begincolumn="60" endcolumn="72" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="main.core.jdbc" class="DresseursJDBC" method="Select" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;id_dresseur&quot; appears 4 times in this file; the first occurrence is on line 30
+</violation>
+<violation beginline="31" endline="31" begincolumn="69" endcolumn="73" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="main.core.jdbc" class="DresseursJDBC" method="Select" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;nom&quot; appears 4 times in this file; the first occurrence is on line 31
+</violation>
+<violation beginline="163" endline="165" begincolumn="26" endcolumn="25" rule="EmptyCatchBlock" ruleset="Empty Code" package="main.core.jdbc" class="DresseursJDBC" method="Insert" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyCatchBlock" priority="3">
 Avoid empty catch blocks
 </violation>
 </file>
@@ -25,11 +36,25 @@ The String literal &quot;nom&quot; appears 4 times in this file; the first occur
 </violation>
 </file>
 <file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Combat.java">
-<violation beginline="10" endline="10" begincolumn="9" endcolumn="36" rule="DefaultPackage" ruleset="Controversial" package="main.core.pokemon" class="Combat" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#DefaultPackage" priority="3">
+<violation beginline="14" endline="14" begincolumn="9" endcolumn="33" rule="DefaultPackage" ruleset="Controversial" package="main.core.pokemon" class="Combat" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#DefaultPackage" priority="3">
 Use explicit scoping instead of the default package private level
 </violation>
-<violation beginline="11" endline="11" begincolumn="9" endcolumn="36" rule="DefaultPackage" ruleset="Controversial" package="main.core.pokemon" class="Combat" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#DefaultPackage" priority="3">
+<violation beginline="15" endline="15" begincolumn="9" endcolumn="33" rule="DefaultPackage" ruleset="Controversial" package="main.core.pokemon" class="Combat" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#DefaultPackage" priority="3">
 Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="52" endline="52" begincolumn="60" endcolumn="60" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="main.core.pokemon" class="Combat" method="Battle" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="54" endline="56" begincolumn="71" endcolumn="25" rule="EmptyIfStmt" ruleset="Empty Code" package="main.core.pokemon" class="Combat" method="Battle" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/empty.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+<violation beginline="54" endline="54" begincolumn="68" endcolumn="68" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="main.core.pokemon" class="Combat" method="Battle" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+</file>
+<file name="C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\pokemon\Dresseurs.java">
+<violation beginline="67" endline="67" begincolumn="35" endcolumn="46" rule="StringInstantiation" ruleset="String and StringBuffer" package="main.core.pokemon" class="Dresseurs" method="toString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.1/rules/java/strings.html#StringInstantiation" priority="2">
+Avoid instantiating String objects; this is usually unnecessary.
 </violation>
 </file>
 </pmd>
