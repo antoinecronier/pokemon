@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.0" sequence="0" timestamp="1461837939970" analysisTimestamp="1461837940120" release="">
+<BugCollection version="3.0.0" sequence="0" timestamp="1461839021475" analysisTimestamp="1461839021566" release="">
   <Project projectName="">
     <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\AttaquesDAO.class</Jar>
     <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\dao\BadgesDAO.class</Jar>
@@ -27,7 +27,6 @@
     <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\TypeDePokemons.class</Jar>
     <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Types.class</Jar>
     <Jar>C:\Users\tactfactory\workspaceLuna\Pokemon\build\classes\main\main\core\pokemon\Zones.class</Jar>
-    <AuxClasspathEntry>C:\Users\tactfactory\.gradle\caches\modules-2\files-2.1\commons-collections\commons-collections\3.2\f951934aa5ae5a88d7e6dfaa6d32307d834a88be\commons-collections-3.2.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Users\tactfactory\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.37\2c378637f6faff77541244e8257b446f04324bd8\mysql-connector-java-5.1.37.jar</AuxClasspathEntry>
     <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\AttaquesDAO.java</SrcDir>
     <SrcDir>C:\Users\tactfactory\workspaceLuna\Pokemon\src\main\core\dao\BadgesDAO.java</SrcDir>
@@ -60,7 +59,7 @@
       <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="91" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="17" end="43" startBytecode="0" endBytecode="514" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="17" end="43" startBytecode="0" endBytecode="435" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -80,7 +79,7 @@
       <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="91" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="17" end="43" startBytecode="0" endBytecode="514" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="17" end="43" startBytecode="0" endBytecode="435" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -101,7 +100,7 @@
       <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="91" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Attaques;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="48" end="72" startBytecode="0" endBytecode="449" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="48" end="72" startBytecode="0" endBytecode="377" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -119,7 +118,7 @@
       <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="13" end="91" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.AttaquesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Attaques;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="48" end="72" startBytecode="0" endBytecode="449" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.AttaquesJDBC" start="48" end="72" startBytecode="0" endBytecode="377" sourcefile="AttaquesJDBC.java" sourcepath="main/core/jdbc/AttaquesJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -138,7 +137,7 @@
       <SourceLine classname="main.core.jdbc.BaseJDBC" start="12" end="57" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.BaseJDBC" name="CloseConnection" signature="()V" isStatic="false">
-      <SourceLine classname="main.core.jdbc.BaseJDBC" start="51" end="57" startBytecode="0" endBytecode="100" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.BaseJDBC" start="51" end="57" startBytecode="0" endBytecode="86" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
     </Method>
   </BugInstance>
   <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE">
@@ -146,7 +145,7 @@
       <SourceLine classname="main.core.jdbc.BaseJDBC" start="12" end="57" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.BaseJDBC" name="EstablishConnection" signature="()Ljava/sql/Connection;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.BaseJDBC" start="31" end="45" startBytecode="0" endBytecode="178" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.BaseJDBC" start="31" end="45" startBytecode="0" endBytecode="160" sourcefile="BaseJDBC.java" sourcepath="main/core/jdbc/BaseJDBC.java"/>
     </Method>
   </BugInstance>
   <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
@@ -154,7 +153,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="Delete" signature="(Ljava/util/ArrayList;)V" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="178" end="192" startBytecode="0" endBytecode="237" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="178" end="192" startBytecode="0" endBytecode="212" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -171,7 +170,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="Insert" signature="(Ljava/util/ArrayList;)Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="142" end="172" startBytecode="0" endBytecode="397" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="142" end="172" startBytecode="0" endBytecode="350" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -188,7 +187,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="20" end="42" startBytecode="0" endBytecode="379" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="20" end="42" startBytecode="0" endBytecode="331" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -208,7 +207,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="20" end="42" startBytecode="0" endBytecode="379" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="20" end="42" startBytecode="0" endBytecode="331" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -230,7 +229,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Dresseurs;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="47" end="66" startBytecode="0" endBytecode="314" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="47" end="66" startBytecode="0" endBytecode="273" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -248,7 +247,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Dresseurs;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="47" end="66" startBytecode="0" endBytecode="314" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="47" end="66" startBytecode="0" endBytecode="273" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -268,7 +267,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="SelectWithPokemons" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="71" end="104" startBytecode="0" endBytecode="531" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="71" end="104" startBytecode="0" endBytecode="467" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -290,7 +289,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="SelectWithPokemons" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="71" end="104" startBytecode="0" endBytecode="531" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="71" end="104" startBytecode="0" endBytecode="467" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -314,7 +313,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="SelectWithPokemons" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Dresseurs;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="109" end="137" startBytecode="0" endBytecode="482" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="109" end="137" startBytecode="0" endBytecode="415" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -334,7 +333,7 @@
       <SourceLine classname="main.core.jdbc.DresseursJDBC" start="16" end="207" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.DresseursJDBC" name="SelectWithPokemons" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Dresseurs;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="109" end="137" startBytecode="0" endBytecode="482" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.DresseursJDBC" start="109" end="137" startBytecode="0" endBytecode="415" sourcefile="DresseursJDBC.java" sourcepath="main/core/jdbc/DresseursJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -356,7 +355,7 @@
       <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="19" end="167" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.PokemonsJDBC" name="Delete" signature="(Ljava/util/ArrayList;)V" isStatic="false">
-      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="146" end="161" startBytecode="0" endBytecode="241" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="146" end="161" startBytecode="0" endBytecode="216" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -373,7 +372,7 @@
       <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="19" end="167" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.PokemonsJDBC" name="Insert" signature="(Ljava/util/ArrayList;)V" isStatic="false">
-      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="113" end="141" startBytecode="0" endBytecode="447" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="113" end="141" startBytecode="0" endBytecode="422" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -390,7 +389,7 @@
       <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="19" end="167" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="23" end="67" startBytecode="0" endBytecode="743" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="23" end="67" startBytecode="0" endBytecode="693" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -410,7 +409,7 @@
       <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="19" end="167" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="23" end="67" startBytecode="0" endBytecode="743" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="23" end="67" startBytecode="0" endBytecode="693" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -432,7 +431,7 @@
       <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="19" end="167" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Pokemons;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="72" end="107" startBytecode="0" endBytecode="600" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="72" end="107" startBytecode="0" endBytecode="557" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -450,7 +449,7 @@
       <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="19" end="167" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.PokemonsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Pokemons;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="72" end="107" startBytecode="0" endBytecode="600" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.PokemonsJDBC" start="72" end="107" startBytecode="0" endBytecode="557" sourcefile="PokemonsJDBC.java" sourcepath="main/core/jdbc/PokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -470,7 +469,7 @@
       <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="135" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/TypeDePokemons;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="81" end="116" startBytecode="0" endBytecode="520" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="81" end="116" startBytecode="0" endBytecode="477" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Method>
     <LocalVariable name="typeDePokemon" register="2" pc="5" role="LOCAL_VARIABLE_VALUE_OF"/>
     <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="114" end="114" startBytecode="223" endBytecode="223" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java" role="SOURCE_LINE_DEREF"/>
@@ -484,7 +483,7 @@
       <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="135" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="EstDeType" signature="(I)Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="57" end="76" startBytecode="0" endBytecode="356" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="57" end="76" startBytecode="0" endBytecode="303" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -502,7 +501,7 @@
       <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="135" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="EstDeType" signature="(I)Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="57" end="76" startBytecode="0" endBytecode="356" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="57" end="76" startBytecode="0" endBytecode="303" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -522,7 +521,7 @@
       <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="135" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="18" end="53" startBytecode="0" endBytecode="571" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="18" end="53" startBytecode="0" endBytecode="521" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -542,7 +541,7 @@
       <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="135" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="18" end="53" startBytecode="0" endBytecode="571" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="18" end="53" startBytecode="0" endBytecode="521" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -564,7 +563,7 @@
       <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="135" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/TypeDePokemons;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="81" end="116" startBytecode="0" endBytecode="520" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="81" end="116" startBytecode="0" endBytecode="477" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -583,7 +582,7 @@
       <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="14" end="135" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypeDePokemonsJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/TypeDePokemons;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="81" end="116" startBytecode="0" endBytecode="520" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypeDePokemonsJDBC" start="81" end="116" startBytecode="0" endBytecode="477" sourcefile="TypeDePokemonsJDBC.java" sourcepath="main/core/jdbc/TypeDePokemonsJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -604,7 +603,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="44" end="65" startBytecode="0" endBytecode="405" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="44" end="65" startBytecode="0" endBytecode="355" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -624,7 +623,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="()Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="44" end="65" startBytecode="0" endBytecode="405" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="44" end="65" startBytecode="0" endBytecode="355" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -645,7 +644,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Types;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="19" end="39" startBytecode="0" endBytecode="348" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="19" end="39" startBytecode="0" endBytecode="305" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -663,7 +662,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="Select" signature="(Ljava/lang/Integer;)Lmain/core/pokemon/Types;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="19" end="39" startBytecode="0" endBytecode="348" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="19" end="39" startBytecode="0" endBytecode="305" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -683,7 +682,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="SelectFaible" signature="(I)Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="94" end="115" startBytecode="0" endBytecode="401" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="94" end="115" startBytecode="0" endBytecode="351" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -703,7 +702,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="SelectFaible" signature="(I)Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="94" end="115" startBytecode="0" endBytecode="401" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="94" end="115" startBytecode="0" endBytecode="351" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -724,7 +723,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="SelectFort" signature="(I)Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="69" end="90" startBytecode="0" endBytecode="401" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="69" end="90" startBytecode="0" endBytecode="351" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.ResultSet" start="4188" end="4289" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
@@ -744,7 +743,7 @@
       <SourceLine classname="main.core.jdbc.TypesJDBC" start="15" end="134" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Class>
     <Method classname="main.core.jdbc.TypesJDBC" name="SelectFort" signature="(I)Ljava/util/ArrayList;" isStatic="false">
-      <SourceLine classname="main.core.jdbc.TypesJDBC" start="69" end="90" startBytecode="0" endBytecode="401" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
+      <SourceLine classname="main.core.jdbc.TypesJDBC" start="69" end="90" startBytecode="0" endBytecode="351" sourcefile="TypesJDBC.java" sourcepath="main/core/jdbc/TypesJDBC.java"/>
     </Method>
     <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
       <SourceLine classname="java.sql.Statement" start="1092" end="1368" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
@@ -770,8 +769,8 @@
     <LocalVariable name="dresseurJDBC" register="0" pc="8" role="LOCAL_VARIABLE_NAMED"/>
     <SourceLine classname="main.core.pokemon.Combat" start="28" end="28" startBytecode="7" endBytecode="7" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
     <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="dresseurJDBC"/>
     <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="dresseurJDBC"/>
   </BugInstance>
   <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE">
     <Class classname="main.core.pokemon.Combat">
@@ -783,15 +782,15 @@
     <LocalVariable name="pokeJDBC" register="4" pc="65" role="LOCAL_VARIABLE_NAMED"/>
     <SourceLine classname="main.core.pokemon.Combat" start="40" end="40" startBytecode="63" endBytecode="63" sourcefile="Combat.java" sourcepath="main/core/pokemon/Combat.java"/>
     <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="pokeJDBC"/>
     <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="pokeJDBC"/>
   </BugInstance>
   <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE">
     <Class classname="main.core.pokemon.Dresseurs">
       <SourceLine classname="main.core.pokemon.Dresseurs" start="13" end="71" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
     </Class>
     <Method classname="main.core.pokemon.Dresseurs" name="toString" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="main.core.pokemon.Dresseurs" start="67" end="71" startBytecode="0" endBytecode="194" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
+      <SourceLine classname="main.core.pokemon.Dresseurs" start="67" end="71" startBytecode="0" endBytecode="174" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
     </Method>
     <SourceLine classname="main.core.pokemon.Dresseurs" start="67" end="67" startBytecode="4" endBytecode="4" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
   </BugInstance>
@@ -800,7 +799,7 @@
       <SourceLine classname="main.core.pokemon.Dresseurs" start="13" end="71" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
     </Class>
     <Method classname="main.core.pokemon.Dresseurs" name="toString" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="main.core.pokemon.Dresseurs" start="67" end="71" startBytecode="0" endBytecode="194" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
+      <SourceLine classname="main.core.pokemon.Dresseurs" start="67" end="71" startBytecode="0" endBytecode="174" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
     </Method>
     <SourceLine classname="main.core.pokemon.Dresseurs" start="69" end="69" startBytecode="35" endBytecode="35" sourcefile="Dresseurs.java" sourcepath="main/core/pokemon/Dresseurs.java"/>
   </BugInstance>
@@ -813,10 +812,10 @@
     </Method>
     <LocalVariable name="typePoke" register="5" pc="18" role="LOCAL_VARIABLE_NAMED"/>
     <SourceLine classname="main.core.pokemon.Pokemons" start="125" end="125" startBytecode="16" endBytecode="16" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
     <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
-    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="typePoke"/>
     <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="typePoke"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
   </BugInstance>
   <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
     <Class classname="main.core.pokemon.Pokemons">
@@ -848,7 +847,7 @@
       <SourceLine classname="main.core.pokemon.Pokemons" start="22" end="145" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
     </Class>
     <Method classname="main.core.pokemon.Pokemons" name="GetRandoms" signature="(ILmain/core/pokemon/Dresseurs;)Ljava/util/ArrayList;" isStatic="true">
-      <SourceLine classname="main.core.pokemon.Pokemons" start="108" end="120" startBytecode="0" endBytecode="294" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+      <SourceLine classname="main.core.pokemon.Pokemons" start="108" end="120" startBytecode="0" endBytecode="256" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
     </Method>
   </BugInstance>
   <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE">
@@ -856,7 +855,7 @@
       <SourceLine classname="main.core.pokemon.Pokemons" start="22" end="145" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
     </Class>
     <Method classname="main.core.pokemon.Pokemons" name="toString" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="main.core.pokemon.Pokemons" start="99" end="103" startBytecode="0" endBytecode="211" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
+      <SourceLine classname="main.core.pokemon.Pokemons" start="99" end="103" startBytecode="0" endBytecode="191" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
     </Method>
     <SourceLine classname="main.core.pokemon.Pokemons" start="101" end="101" startBytecode="77" endBytecode="77" sourcefile="Pokemons.java" sourcepath="main/core/pokemon/Pokemons.java"/>
   </BugInstance>
@@ -865,7 +864,7 @@
       <SourceLine classname="main.core.pokemon.TypeDePokemons" start="18" end="93" sourcefile="TypeDePokemons.java" sourcepath="main/core/pokemon/TypeDePokemons.java"/>
     </Class>
     <Method classname="main.core.pokemon.TypeDePokemons" name="toString" signature="()Ljava/lang/String;" isStatic="false">
-      <SourceLine classname="main.core.pokemon.TypeDePokemons" start="89" end="93" startBytecode="0" endBytecode="261" sourcefile="TypeDePokemons.java" sourcepath="main/core/pokemon/TypeDePokemons.java"/>
+      <SourceLine classname="main.core.pokemon.TypeDePokemons" start="89" end="93" startBytecode="0" endBytecode="241" sourcefile="TypeDePokemons.java" sourcepath="main/core/pokemon/TypeDePokemons.java"/>
     </Method>
     <SourceLine classname="main.core.pokemon.TypeDePokemons" start="91" end="91" startBytecode="30" endBytecode="30" sourcefile="TypeDePokemons.java" sourcepath="main/core/pokemon/TypeDePokemons.java"/>
   </BugInstance>
@@ -874,11 +873,11 @@
       <SourceLine classname="main.core.pokemon.Types" start="27" end="93" sourcefile="Types.java" sourcepath="main/core/pokemon/Types.java"/>
     </Class>
     <Method classname="main.core.pokemon.Types" name="DidItIsEffective" signature="(Lmain/core/pokemon/Types;)Z" isStatic="false">
-      <SourceLine classname="main.core.pokemon.Types" start="79" end="87" startBytecode="0" endBytecode="159" sourcefile="Types.java" sourcepath="main/core/pokemon/Types.java"/>
+      <SourceLine classname="main.core.pokemon.Types" start="79" end="87" startBytecode="0" endBytecode="140" sourcefile="Types.java" sourcepath="main/core/pokemon/Types.java"/>
     </Method>
   </BugInstance>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Thu, 28 Apr 2016 12:05:39 +0200" total_classes="25" referenced_classes="53" total_bugs="48" total_size="993" num_packages="3" java_version="1.8.0_65" vm_version="25.65-b01" cpu_seconds="14.44" clock_seconds="4.18" peak_mbytes="197.15" alloc_mbytes="1803.00" gc_seconds="0.10" priority_2="46" priority_1="2">
+  <FindBugsSummary timestamp="Thu, 28 Apr 2016 12:23:41 +0200" total_classes="25" referenced_classes="53" total_bugs="48" total_size="993" num_packages="3" java_version="1.8.0_65" vm_version="25.65-b01" cpu_seconds="13.94" clock_seconds="3.90" peak_mbytes="190.88" alloc_mbytes="1803.00" gc_seconds="0.05" priority_2="46" priority_1="2">
     <PackageStats package="main.core.dao" total_bugs="0" total_types="9" total_size="54">
       <ClassStats class="main.core.dao.AttaquesDAO" sourceFile="AttaquesDAO.java" interface="true" size="6" bugs="0"/>
       <ClassStats class="main.core.dao.BadgesDAO" sourceFile="BadgesDAO.java" interface="true" size="6" bugs="0"/>
@@ -911,34 +910,32 @@
       <ClassStats class="main.core.pokemon.Zones" sourceFile="Zones.java" interface="false" size="34" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="387" invocations="498" avgMicrosecondsPerInvocation="778" maxMicrosecondsPerInvocation="27012" standardDeviationMircosecondsPerInvocation="1825"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="223" invocations="183" avgMicrosecondsPerInvocation="1220" maxMicrosecondsPerInvocation="14739" standardDeviationMircosecondsPerInvocation="2042"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="192" invocations="499" avgMicrosecondsPerInvocation="385" maxMicrosecondsPerInvocation="44773" standardDeviationMircosecondsPerInvocation="2610"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="167" invocations="53" avgMicrosecondsPerInvocation="3167" maxMicrosecondsPerInvocation="45606" standardDeviationMircosecondsPerInvocation="7281"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="153" invocations="184" avgMicrosecondsPerInvocation="836" maxMicrosecondsPerInvocation="12136" standardDeviationMircosecondsPerInvocation="1428"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="147" invocations="163" avgMicrosecondsPerInvocation="907" maxMicrosecondsPerInvocation="13507" standardDeviationMircosecondsPerInvocation="1738"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="143" invocations="313" avgMicrosecondsPerInvocation="457" maxMicrosecondsPerInvocation="7696" standardDeviationMircosecondsPerInvocation="860"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="125" invocations="163" avgMicrosecondsPerInvocation="771" maxMicrosecondsPerInvocation="10185" standardDeviationMircosecondsPerInvocation="1524"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="113" invocations="60" avgMicrosecondsPerInvocation="1899" maxMicrosecondsPerInvocation="30776" standardDeviationMircosecondsPerInvocation="4067"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="110" invocations="163" avgMicrosecondsPerInvocation="678" maxMicrosecondsPerInvocation="30065" standardDeviationMircosecondsPerInvocation="2391"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="91" invocations="163" avgMicrosecondsPerInvocation="558" maxMicrosecondsPerInvocation="8555" standardDeviationMircosecondsPerInvocation="1024"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="78" invocations="208" avgMicrosecondsPerInvocation="375" maxMicrosecondsPerInvocation="53419" standardDeviationMircosecondsPerInvocation="3689"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="71" invocations="67" avgMicrosecondsPerInvocation="1062" maxMicrosecondsPerInvocation="39439" standardDeviationMircosecondsPerInvocation="4815"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="66" invocations="466" avgMicrosecondsPerInvocation="143" maxMicrosecondsPerInvocation="3097" standardDeviationMircosecondsPerInvocation="254"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.InfiniteLoop" totalMilliseconds="53" invocations="25" avgMicrosecondsPerInvocation="2141" maxMicrosecondsPerInvocation="42059" standardDeviationMircosecondsPerInvocation="8170"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="50" invocations="41" avgMicrosecondsPerInvocation="1238" maxMicrosecondsPerInvocation="3860" standardDeviationMircosecondsPerInvocation="1295"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="49" invocations="53" avgMicrosecondsPerInvocation="931" maxMicrosecondsPerInvocation="8991" standardDeviationMircosecondsPerInvocation="1958"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnsatisfiedObligation" totalMilliseconds="39" invocations="25" avgMicrosecondsPerInvocation="1560" maxMicrosecondsPerInvocation="11911" standardDeviationMircosecondsPerInvocation="2964"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="37" invocations="53" avgMicrosecondsPerInvocation="713" maxMicrosecondsPerInvocation="17846" standardDeviationMircosecondsPerInvocation="2760"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="37" invocations="25" avgMicrosecondsPerInvocation="1494" maxMicrosecondsPerInvocation="7950" standardDeviationMircosecondsPerInvocation="2573"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="36" invocations="53" avgMicrosecondsPerInvocation="687" maxMicrosecondsPerInvocation="12578" standardDeviationMircosecondsPerInvocation="1835"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="35" invocations="53" avgMicrosecondsPerInvocation="676" maxMicrosecondsPerInvocation="6010" standardDeviationMircosecondsPerInvocation="1129"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="34" invocations="163" avgMicrosecondsPerInvocation="210" maxMicrosecondsPerInvocation="3034" standardDeviationMircosecondsPerInvocation="390"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="32" invocations="53" avgMicrosecondsPerInvocation="617" maxMicrosecondsPerInvocation="6111" standardDeviationMircosecondsPerInvocation="1186"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="29" invocations="21" avgMicrosecondsPerInvocation="1421" maxMicrosecondsPerInvocation="3014" standardDeviationMircosecondsPerInvocation="726"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="29" invocations="53" avgMicrosecondsPerInvocation="549" maxMicrosecondsPerInvocation="4927" standardDeviationMircosecondsPerInvocation="1039"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.URLProblems" totalMilliseconds="24" invocations="25" avgMicrosecondsPerInvocation="984" maxMicrosecondsPerInvocation="3671" standardDeviationMircosecondsPerInvocation="1173"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="24" invocations="1578" avgMicrosecondsPerInvocation="15" maxMicrosecondsPerInvocation="2197" standardDeviationMircosecondsPerInvocation="76"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="413" invocations="498" avgMicrosecondsPerInvocation="829" maxMicrosecondsPerInvocation="21101" standardDeviationMircosecondsPerInvocation="1907"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="224" invocations="183" avgMicrosecondsPerInvocation="1228" maxMicrosecondsPerInvocation="16944" standardDeviationMircosecondsPerInvocation="2093"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="161" invocations="163" avgMicrosecondsPerInvocation="992" maxMicrosecondsPerInvocation="11019" standardDeviationMircosecondsPerInvocation="1863"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="160" invocations="184" avgMicrosecondsPerInvocation="874" maxMicrosecondsPerInvocation="16734" standardDeviationMircosecondsPerInvocation="1647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="157" invocations="313" avgMicrosecondsPerInvocation="503" maxMicrosecondsPerInvocation="7258" standardDeviationMircosecondsPerInvocation="992"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="147" invocations="53" avgMicrosecondsPerInvocation="2778" maxMicrosecondsPerInvocation="30939" standardDeviationMircosecondsPerInvocation="5547"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="129" invocations="163" avgMicrosecondsPerInvocation="797" maxMicrosecondsPerInvocation="33341" standardDeviationMircosecondsPerInvocation="2768"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="127" invocations="163" avgMicrosecondsPerInvocation="784" maxMicrosecondsPerInvocation="30789" standardDeviationMircosecondsPerInvocation="2773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="120" invocations="163" avgMicrosecondsPerInvocation="741" maxMicrosecondsPerInvocation="7856" standardDeviationMircosecondsPerInvocation="1424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="82" invocations="208" avgMicrosecondsPerInvocation="398" maxMicrosecondsPerInvocation="58767" standardDeviationMircosecondsPerInvocation="4059"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="81" invocations="60" avgMicrosecondsPerInvocation="1362" maxMicrosecondsPerInvocation="10339" standardDeviationMircosecondsPerInvocation="1763"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="67" invocations="466" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="2415" standardDeviationMircosecondsPerInvocation="246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="64" invocations="499" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="1520" standardDeviationMircosecondsPerInvocation="116"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="59" invocations="67" avgMicrosecondsPerInvocation="887" maxMicrosecondsPerInvocation="27723" standardDeviationMircosecondsPerInvocation="3430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="58" invocations="1578" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="33478" standardDeviationMircosecondsPerInvocation="847"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="53" invocations="53" avgMicrosecondsPerInvocation="1003" maxMicrosecondsPerInvocation="13385" standardDeviationMircosecondsPerInvocation="2205"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="48" invocations="41" avgMicrosecondsPerInvocation="1194" maxMicrosecondsPerInvocation="4291" standardDeviationMircosecondsPerInvocation="1273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="37" invocations="25" avgMicrosecondsPerInvocation="1482" maxMicrosecondsPerInvocation="8476" standardDeviationMircosecondsPerInvocation="2642"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUnsatisfiedObligation" totalMilliseconds="35" invocations="25" avgMicrosecondsPerInvocation="1437" maxMicrosecondsPerInvocation="11490" standardDeviationMircosecondsPerInvocation="2737"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="34" invocations="53" avgMicrosecondsPerInvocation="647" maxMicrosecondsPerInvocation="17578" standardDeviationMircosecondsPerInvocation="2621"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="53" avgMicrosecondsPerInvocation="647" maxMicrosecondsPerInvocation="8318" standardDeviationMircosecondsPerInvocation="1337"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="33" invocations="163" avgMicrosecondsPerInvocation="206" maxMicrosecondsPerInvocation="2812" standardDeviationMircosecondsPerInvocation="392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="32" invocations="53" avgMicrosecondsPerInvocation="619" maxMicrosecondsPerInvocation="9782" standardDeviationMircosecondsPerInvocation="1528"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="31" invocations="53" avgMicrosecondsPerInvocation="597" maxMicrosecondsPerInvocation="8729" standardDeviationMircosecondsPerInvocation="1383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="30" invocations="163" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="3739" standardDeviationMircosecondsPerInvocation="407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="26" invocations="53" avgMicrosecondsPerInvocation="507" maxMicrosecondsPerInvocation="5014" standardDeviationMircosecondsPerInvocation="964"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
