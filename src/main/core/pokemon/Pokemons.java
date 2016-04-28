@@ -16,6 +16,7 @@ public class Pokemons {
 	private int id_type_de_pokemon;
 	private ArrayList<Attaques> attaques;
 	private TypeDePokemons typeDePokemon;
+	private int real_pv;
 
 	public Pokemons(String surnom, int niveau,
 			ArrayList<Attaques> attaques, TypeDePokemons typeDePokemon) {
@@ -29,6 +30,14 @@ public class Pokemons {
 		this.setAttaques(new ArrayList<Attaques>());
 	}
 	
+	public int getReal_pv() {
+		return real_pv;
+	}
+
+	public void setReal_pv(int real_pv) {
+		this.real_pv = real_pv;
+	}
+
 	public int getId_type_de_pokemon() {
 		return id_type_de_pokemon;
 	}
@@ -126,6 +135,7 @@ public class Pokemons {
 		}
 		
 		poke.setId_dresseurs(dresseur.getId_dresseur());
+		poke.setReal_pv(poke.getTypeDePokemon().getPv());
 		
 		return poke;
 	}

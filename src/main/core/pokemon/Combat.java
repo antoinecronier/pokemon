@@ -11,67 +11,13 @@ import main.core.jdbc.TypeDePokemonsJDBC;
 import main.core.jdbc.TypesJDBC;
 
 public class Combat {
-	ArrayList<Pokemons> joueur1;
-	ArrayList<Pokemons> joueur2;
+	static Dresseurs joueur1;
+	static Dresseurs joueur2;
 
 	public static void main(String[] args) {
 		Introduction();
-
-		// /* Testing */
-		// TypesJDBC typesJDBC = new TypesJDBC();
-		// typesJDBC.EstablishConnection();
-		//
-		// AttaquesJDBC attaquesJDBC = new AttaquesJDBC();
-		// ArrayList<Attaques> attaques = attaquesJDBC.Select();
-		// for (Attaques attaque : attaques) {
-		// System.out.println(attaque.toString());
-		// }
-		//
-		// TypeDePokemonsJDBC typeDePokemonsJDBC = new TypeDePokemonsJDBC();
-		// ArrayList<TypeDePokemons> typeDePokemons =
-		// typeDePokemonsJDBC.Select();
-		// for (TypeDePokemons typeDePokemon : typeDePokemons) {
-		// System.out.println(typeDePokemon.toString());
-		// }
-		//
-		// Types type = typesJDBC.Select(4);
-		//
-		// ArrayList<Types> types = typesJDBC.Select();
-		// for (Types types2 : types) {
-		// System.out.println(types2.getNom());
-		// System.out.println("  Fort contre :");
-		// for (Types types3 : types2.getFortContre()) {
-		// System.out.println("    " + types3.getNom());
-		// }
-		// System.out.println("  Faible contre :");
-		// for (Types types3 : types2.getFaibleContre()) {
-		// System.out.println("    " + types3.getNom());
-		// }
-		// }
-
-		// DresseursJDBC dresseursJDBC = new DresseursJDBC();
-		// ArrayList<Dresseurs> dresseurs = dresseursJDBC.Select();
-		// for (Dresseurs dresseur : dresseurs) {
-		// System.out.println(dresseur.toString());
-		// }
-		//
-		// dresseurs = dresseursJDBC.SelectWithPokemons();
-		// for (Dresseurs dresseur : dresseurs) {
-		// System.out.println(dresseur.toString());
-		// }
-
-		// PokemonsJDBC pokeJDBC = new PokemonsJDBC();
-		// pokeJDBC.Insert(dresseurs.get(5).getPokemons());
-		// dresseurs.get(5).getPokemons().remove(0);
-		// dresseurs.get(5).getPokemons().remove(1);
-		// pokeJDBC.Delete(dresseurs.get(5).getPokemons());
-
 		Setup();
-		DresseursJDBC dresseursJDBC = new DresseursJDBC();
-		ArrayList<Dresseurs> dresseurs = dresseursJDBC.SelectWithPokemons();
-		for (Dresseurs dresseur : dresseurs) {
-			System.out.println(dresseur.toString());
-		}
+		Battle(joueur1, joueur2);
 	}
 
 	private static void Introduction() {
@@ -89,12 +35,25 @@ public class Combat {
 		dresseur2.setNom("alfonse");
 		dresseurs.add(dresseur2);
 
-		dresseurs = dresseurJDBC.Insert(dresseurs);
+		//dresseurs = dresseurJDBC.Insert(dresseurs);
 
 		PokemonsJDBC pokeJDBC = new PokemonsJDBC();
 		for (Dresseurs dresseurTmp : dresseurs) {
 			dresseurTmp.setPokemons(Pokemons.GetRandoms(6, dresseurTmp));
-			pokeJDBC.Insert(dresseurTmp.getPokemons());
+			//pokeJDBC.Insert(dresseurTmp.getPokemons());
+		}
+		
+		joueur1 = dresseurs.get(0);
+		joueur2 = dresseurs.get(1);
+	}
+	
+	private static void Battle(Dresseurs d1,Dresseurs d2){
+		d2.getPokemons().get(0).setReal_pv(d2.getPokemons().get(0).getReal_pv() - d1.getPokemons().get(0).getAttaques().get(0).getPuissance());
+		if (d2.getPokemons().get(0).getReal_pv() > 0) {
+			d1.getPokemons().get(0).setReal_pv(d1.getPokemons().get(0).getReal_pv() - d2.getPokemons().get(0).getAttaques().get(0).getPuissance());
+			if (d1.getPokemons().get(0).getReal_pv() > 0) {
+				
+			}
 		}
 	}
 }

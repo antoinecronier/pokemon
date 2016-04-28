@@ -150,16 +150,19 @@ public class DresseursJDBC implements DresseursDAO {
 				preparedStatement.setString(1, dresseur.getNom());
 
 				preparedStatement.executeUpdate();
-				
-				try (ResultSet generatedKeys = preparedStatement.getGeneratedKeys()) {
+
+				try {
+					ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
 		            if (generatedKeys.next()) {
 		            	dresseur.setId_dresseur((int) generatedKeys.getLong(1));
+		            	result.add(dresseur);
 		            }
 		            else {
 		                throw new SQLException("Creating user failed, no ID obtained.");
 		            }
+		        }catch (Exception e){
+
 		        }
-				result.add(dresseur);
 			}
 
 		} catch (SQLException e) {
